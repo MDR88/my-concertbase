@@ -1,19 +1,29 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "users": [
+        {
+            "id": 0,
+            "displayName": "Display_Name",
+            "email": "@test.com",
+            "password": "Test_Password"
+        }
+    ],
+    "bands": [
+        {
+            "id": 0,
+            "band": "Band_Name",
+            "url": "http://www.band_Name.com"
+        }
+    ],
+    "concerts": [
+        {
+            "id": 0,
+            "bandId": 0,
+            "date": "Date",
+            "venue": "Bridgestone",
+            "journal": "Journal_Text",
+            "mediaLinksurl": "http://www.mediaLinkscom",
+            "setList": "SetList",
+            "userID": 0
+        }
+    ]
 }
