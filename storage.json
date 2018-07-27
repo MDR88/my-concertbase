@@ -1,0 +1,18 @@
+{
+    "users": [
+      {
+        "id": 0,
+        "displayName":"Display_Name",
+        "email": "@test.com",
+        "password": "Test_Password"
+      }
+    ],
+    "bands": [
+        {
+          "id": 0,
+          "band": "Band_Name",
+          "url": "http://www.band_Name.com"
+        },
+    ]
+
+}
