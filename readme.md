@@ -2,11 +2,10 @@ Contact Info
 Email Address: mikedroberts88@gmail.com
 Slack Handle: @Mroberts
 Github (Captone Repo or Your Page): 
-Your mentor is: Jordan
 Initial Proposal
 Name of Project: MyConcertbase
 Brief Proposal:   Concert Tracker allows users to post the concerts they attend either past or present. They can add the date, location and can rate and review the concert they attended. They can post media links, set lists and youtube footage of the show. As well as post venue information. They can also share memories from the show. 
-App Summary (After you get the 👍 on your paragraph proposal)
+
 
 Overview of app: 
 Concert Tracker allows you to add concert events that you have attended. The short term goal for myconcertBase is to track the concerts I have been to. This includes a journal to write about it, a rating system and media links. The long term goal is to be a social media concert experience app. Users will be able to post the shows they attended and post their memories and photos.  There will also be a way to search on past and current concert info on the band of choice. The application can expand to search for previous concert and information on bands. There will also be a message board to share comments and post photos or video links. 
