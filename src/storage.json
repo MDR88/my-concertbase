@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "userName": "Display_Name",
+      "email": "@test.com",
+      "password": "Test_Password"
+    }
+  ],
+  "bands": [
+    {
+      "id": 0,
+      "band": "Band_Name",
+      "url": "http://www.band_Name.com"
+    },
+    {
+      "id": 1,
+      "band": "The Cure",
+      "url": "http://www.theCure.com"
+    },
+    {
+      "id": 2,
+      "band": "Social Distortion",
+      "url": "http://www.socialDistortion.com"
+    },
+    {
+      "id": 3,
+      "band": "The Ramones",
+      "url": "http://www.theramones.com"
+    }
+  ],
+  "concerts": [
+    {
+      "id": 0,
+      "bandId": 0,
+      "date": "Date",
+      "venue": "Venue_Name",
+      "journal": "Journal_Text",
+      "mediaLinksurl": "http://www.mediaLinkscom",
+      "setList": "SetList",
+      "userID": 0
+    }
+  ]
+}
