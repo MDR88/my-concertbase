@@ -49,6 +49,15 @@ const databaseMethods = Object.create({}, {
             })
         }
     },
+    addBand: {
+        value: (band) => {
+            return $.ajax({
+                url: "http://localhost:3000/concerts",
+                method: "POST",
+                data: band
+            })
+        }
+    },
 
 
 

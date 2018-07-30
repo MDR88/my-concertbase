@@ -33,12 +33,107 @@
     {
       "id": 0,
       "bandId": 0,
+      "bandName": "Band_Name",
       "date": "Date",
       "venue": "Venue_Name",
       "journal": "Journal_Text",
       "mediaLinksurl": "http://www.mediaLinkscom",
       "setList": "SetList",
       "userID": 0
+    },
+    {
+      "bandName": "Band Name 2",
+      "date": "2017-09-02",
+      "venue": "Irvine Medows",
+      "setList": "Set List",
+      "mediaLinksurl": "Links",
+      "journal": "My Notes",
+      "id": 1
+    },
+    {
+      "bandName": "Band Name 2",
+      "date": "2017-09-02",
+      "venue": "Irvine Medows",
+      "setList": "Set List",
+      "mediaLinksurl": "Links",
+      "journal": "My Notes",
+      "id": 2
+    },
+    {
+      "bandName": "Band Name 2",
+      "date": "2017-09-02",
+      "venue": "Irvine Medows",
+      "setList": "Set List",
+      "mediaLinksurl": "Links",
+      "journal": "My Notes",
+      "id": 3
+    },
+    {
+      "date": "2016-07-11",
+      "venue": "Irvine Medows",
+      "setList": "Setlist NEW",
+      "mediaLinksurl": "LINKS",
+      "journal": "My Journal",
+      "id": 4
+    },
+    {
+      "date": "1988-01-06",
+      "venue": "Spankys In Riverside",
+      "setList": "List of songs Played",
+      "mediaLinksurl": "Links to live footage",
+      "journal": "My Journal",
+      "id": 5
+    },
+    {
+      "date": "1988-01-06",
+      "venue": "Spankys In Riverside",
+      "setList": "List of songs Played",
+      "mediaLinksurl": "Links to live footage",
+      "journal": "My Journal",
+      "id": 6
+    },
+    {
+      "date": "1973-04-05",
+      "venue": "Bridgestone",
+      "setList": "Setlist",
+      "mediaLinksurl": "Links.",
+      "journal": "My Journal",
+      "id": 7
+    },
+    {
+      "date": "1999-06-25",
+      "venue": "The Venue",
+      "setList": "SET LIST",
+      "mediaLinksurl": "SHOW LINKS",
+      "journal": "NOTES",
+      "id": 8
+    },
+    {
+      "bandName": "New Band Name Here",
+      "date": "1992-05-24",
+      "venue": "The Venue ",
+      "setList": "Set List",
+      "mediaLinksurl": "Links",
+      "journal": "This was fun!",
+      "id": 9
+    },
+    {
+      "bandName": "New Band Name Here",
+      "date": "1992-05-24",
+      "venue": "The Venue ",
+      "setList": "Set List",
+      "mediaLinksurl": "Links",
+      "journal": "This was fun!",
+      "id": 10
+    },
+    {
+      "bandName": "New Band Name Here",
+      "date": "1992-05-24",
+      "venue": "The Venue ",
+      "setList": "Set List",
+      "mediaLinksurl": "Links",
+      "journal": "This was fun!",
+      "id": 11
     }
   ]
 }
