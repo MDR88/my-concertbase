@@ -25,6 +25,8 @@ const addShowToDOMObject = Object.create({}, {
                         const $pElmediaLinks = $("<p>").addClass("mediaLinks-field-class").attr("id", "mediaLinks-field-id").text(`Media Links: ${concert.mediaLinksurl}`).appendTo($concertCard)
                         const $pElSetList = $("<p>").addClass("setList-field-class").attr("id", "setList-field-id").text(`The Set List: ${concert.mediaLinksurl}`).appendTo($concertCard)
                         const $pElMyJournal = $("<p>").addClass("myJournal-field-class").attr("id", "myJournal-field-id").text(`My Journal: ${concert.journal}`).appendTo($concertCard)
+                        const $editConcertBtn = $("<button>").attr("id", "edit-concert-btn-id").text("Edit").appendTo($concertCard)
+                        const $delConcertBtn = $("<button>").attr("id", "del-concert-btn").text("Delete").appendTo($concertCard)
                         $concertCard.appendTo(concertVault)
                     }
 
