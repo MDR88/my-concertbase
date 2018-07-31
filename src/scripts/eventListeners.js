@@ -5,7 +5,7 @@
 const $ = require("jquery");
 const databaseMethods = require("./databaseMethods")
 const addConcert = require("./addConcert")
-const PrintToDOM = require("./printToDOM")
+const printToDOM = require("./printToDOM")
 const homePage = require("./home")
 
 // Selecting the BODY tag and adding an event listner for actions when clicking buttons.
@@ -33,7 +33,7 @@ body.addEventListener("click", () => {
       
         databaseMethods.addConcert(concert).then((response) => {
 
-            printToDOM.addBookToDom()
+            printToDOM.addConcertToDOM()
             // welcome.buildHome()
 
         })

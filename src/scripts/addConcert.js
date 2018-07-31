@@ -27,11 +27,9 @@ const addConcertObject = Object.create({}, {
 
             const $concertLinksLabel = $("<label>").attr("for", "concert-links").text("Concert Setlist")
             const $concertLinksInput = $("<input>").attr("id", "concert-links").attr("placeholder", "Concert Show Links").appendTo($concertFormDiv)
-
-
-
+          
             const $concertJournalLabel = $("<label>").attr("for", "concert-journal").text("Concert Journal")
-            const $concertJournalInput = $("<input>").attr("id", "concert-journal").attr("placeholder", "Concert Journal").appendTo($concertFormDiv)
+            const $concertJournalInput = $("<input>").attr("id", "concert-journal").attr("type", "textarea").attr("placeholder", "Concert Journal").appendTo($concertFormDiv)
 
             const $addConcertBtn = $("<button>").attr("id", "concert-add-btn").text("Add Your Concert").appendTo($concertFormDiv)
 
