@@ -24,3 +24,14 @@ body {
 
 
     }
+
+    #concert-form-div {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+button {
+    border-radius: 5px;
+    }

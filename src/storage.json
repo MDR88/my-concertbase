@@ -33,377 +33,58 @@
     {
       "id": 0,
       "bandId": 0,
-      "bandName": "Band_Name",
-      "date": "Date",
-      "venue": "Venue_Name",
+      "bandName": "Social Distortion",
+      "date": "April 5th, 1990",
+      "venue": "Univercity Of California Irvine",
       "journal": "Journal_Text",
       "mediaLinksurl": "http://www.mediaLinkscom",
-      "setList": "SetList",
+      "setList": "https://www.setlist.fm/setlist/social-distortion/1990/university-of-california-irvine-irvine-ca-53c727dd.html",
       "userID": 0
     },
     {
-      "bandName": "Band Name 2",
-      "date": "2017-09-02",
-      "venue": "Irvine Medows",
-      "setList": "Set List",
-      "mediaLinksurl": "Links",
-      "journal": "My Notes",
+      "bandName": "They Might Be Giants",
+      "date": "1992-09-19",
+      "venue": "The Coach House San Juan Capistrano",
+      "setList": "https://www.setlist.fm/setlist/they-might-be-giants/1992/the-coach-house-san-juan-capistrano-ca-2bd6e092.html",
+      "mediaLinksurl": "",
+      "journal": "",
       "id": 1
     },
     {
-      "bandName": "Band Name 2",
-      "date": "2017-09-02",
-      "venue": "Irvine Medows",
-      "setList": "Set List",
-      "mediaLinksurl": "Links",
-      "journal": "My Notes",
+      "bandName": "The Ramones ",
+      "date": "1990-08-08",
+      "venue": "Irvine Meadows ",
+      "setList": "Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "",
       "id": 2
     },
     {
-      "bandName": "Band Name 2",
-      "date": "2017-09-02",
-      "venue": "Irvine Medows",
-      "setList": "Set List",
-      "mediaLinksurl": "Links",
-      "journal": "My Notes",
+      "bandName": "",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
       "id": 3
     },
     {
-      "date": "2016-07-11",
-      "venue": "Irvine Medows",
-      "setList": "Setlist NEW",
-      "mediaLinksurl": "LINKS",
-      "journal": "My Journal",
+      "bandName": "",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
       "id": 4
     },
     {
-      "date": "1988-01-06",
-      "venue": "Spankys In Riverside",
-      "setList": "List of songs Played",
-      "mediaLinksurl": "Links to live footage",
-      "journal": "My Journal",
+      "bandName": "",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
       "id": 5
-    },
-    {
-      "date": "1988-01-06",
-      "venue": "Spankys In Riverside",
-      "setList": "List of songs Played",
-      "mediaLinksurl": "Links to live footage",
-      "journal": "My Journal",
-      "id": 6
-    },
-    {
-      "date": "1973-04-05",
-      "venue": "Bridgestone",
-      "setList": "Setlist",
-      "mediaLinksurl": "Links.",
-      "journal": "My Journal",
-      "id": 7
-    },
-    {
-      "date": "1999-06-25",
-      "venue": "The Venue",
-      "setList": "SET LIST",
-      "mediaLinksurl": "SHOW LINKS",
-      "journal": "NOTES",
-      "id": 8
-    },
-    {
-      "bandName": "New Band Name Here",
-      "date": "1992-05-24",
-      "venue": "The Venue ",
-      "setList": "Set List",
-      "mediaLinksurl": "Links",
-      "journal": "This was fun!",
-      "id": 9
-    },
-    {
-      "bandName": "New Band Name Here",
-      "date": "1992-05-24",
-      "venue": "The Venue ",
-      "setList": "Set List",
-      "mediaLinksurl": "Links",
-      "journal": "This was fun!",
-      "id": 10
-    },
-    {
-      "bandName": "New Band Name Here",
-      "date": "1992-05-24",
-      "venue": "The Venue ",
-      "setList": "Set List",
-      "mediaLinksurl": "Links",
-      "journal": "This was fun!",
-      "id": 11
-    },
-    {
-      "bandName": "name",
-      "date": "2018-07-11",
-      "venue": "venue",
-      "setList": "fdsfsd",
-      "mediaLinksurl": "dsfd",
-      "journal": "sdfds",
-      "id": 12
-    },
-    {
-      "bandName": "name",
-      "date": "2018-07-11",
-      "venue": "venue",
-      "setList": "fdsfsd",
-      "mediaLinksurl": "dsfd",
-      "journal": "sdfds",
-      "id": 13
-    },
-    {
-      "bandName": "name",
-      "date": "2018-07-11",
-      "venue": "venue",
-      "setList": "fdsfsd",
-      "mediaLinksurl": "dsfd",
-      "journal": "sdfds",
-      "id": 14
-    },
-    {
-      "bandName": "sdsd",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 15
-    },
-    {
-      "bandName": "sdsd",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 16
-    },
-    {
-      "bandName": "dsfsf",
-      "date": "2018-07-04",
-      "venue": "dfsfff",
-      "setList": "sdfds",
-      "mediaLinksurl": "sdfd",
-      "journal": "sdfds",
-      "id": 17
-    },
-    {
-      "bandName": "The Ramones",
-      "date": "2018-07-21",
-      "venue": "Irvine Medows",
-      "setList": "Link To Setlist",
-      "mediaLinksurl": "Consert Links",
-      "journal": "Joiurnal",
-      "id": 18
-    },
-    {
-      "bandName": "The Beatles",
-      "date": "2018-07-18",
-      "venue": "The Hollywood Bowl",
-      "setList": "The Set list",
-      "mediaLinksurl": "Show Links",
-      "journal": "My Journal......",
-      "id": 19
-    },
-    {
-      "bandName": "dfggdf",
-      "date": "2018-07-03",
-      "venue": "dfg",
-      "setList": "dfgfdg",
-      "mediaLinksurl": "dgfdgffgd",
-      "journal": "dfg",
-      "id": 20
-    },
-    {
-      "bandName": "Another Band",
-      "date": "2018-07-03",
-      "venue": "Another venue",
-      "setList": "dfgfdg",
-      "mediaLinksurl": "http://www.thecure.com",
-      "journal": "My New Journal",
-      "id": 21
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 22
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 23
-    },
-    {
-      "bandName": "dffgd",
-      "date": "2018-07-11",
-      "venue": "vvv",
-      "setList": "xdfsf",
-      "mediaLinksurl": "sdf",
-      "journal": "dsf",
-      "id": 24
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 25
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 26
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 27
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 28
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 29
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 30
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 31
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 32
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 33
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 34
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 35
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 36
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 37
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 38
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 39
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 40
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 41
     }
   ]
 }

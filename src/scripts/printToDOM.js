@@ -1,9 +1,9 @@
 //Author: Michael Roberts
 //Purpose: Prints the object below to the DOM.
-
-const AddConcertForm = require("./addConcert")
 const databaseMethods = require("./databaseMethods")
 const $ = require("jquery")
+const clear = require("./clear")
+const addConcert = require("./addConcert")
 
 
 
@@ -18,15 +18,15 @@ const addShowToDOMObject = Object.create({}, {
                 .then((concerts) => {
                     console.log("CONCERTS IN PRINT TO DOM", concerts)
                     concerts.forEach(concert => {
-                        const $concertCard = $("<div>").addClass("concertCardDiv").attr("Id", `Concert--${concert.id}`)
-                        const $h3Title = $("<h3>").addClass("bandTitle-field-class").attr("id", "bandTitle-field-id").text(`Band: ${concert.bandName}`).appendTo($concertCard)
+                        const $concertCard = $("<div>").addClass("concertCardDiv").attr("Id", `${concert.id}`)
+                        const $h3Title = $("<h3>").addClass("bandTitle-field-class").attr("id", "bandTitle-field-id").text(`${concert.bandName}`).appendTo($concertCard)
                         const $pElDate = $("<p>").addClass("date-field-class").attr("id", "concert-date-field-id").text(`Date: ${concert.date}`).appendTo($concertCard)
                         const $pElVenue = $("<p>").addClass("venue-field-class").attr("id", "venue-field-id").text(`Venue: ${concert.venue}`).appendTo($concertCard)
                         const $pElmediaLinks = $("<p>").addClass("mediaLinks-field-class").attr("id", "mediaLinks-field-id").text(`Media Links: ${concert.mediaLinksurl}`).appendTo($concertCard)
                         const $pElSetList = $("<p>").addClass("setList-field-class").attr("id", "setList-field-id").text(`The Set List: ${concert.mediaLinksurl}`).appendTo($concertCard)
                         const $pElMyJournal = $("<p>").addClass("myJournal-field-class").attr("id", "myJournal-field-id").text(`My Journal: ${concert.journal}`).appendTo($concertCard)
-                        const $editConcertBtn = $("<button>").attr("id", "edit-concert-btn-id").text("Edit").appendTo($concertCard)
-                        const $delConcertBtn = $("<button>").attr("id", "del-concert-btn").text("Delete").appendTo($concertCard)
+                        const $editConcertBtn = $("<button>").attr("id", "edit-concert-btn-id").addClass("edit-concert-btn-class").text("Edit").appendTo($concertCard)
+                        const $delConcertBtn = $("<button>").attr("id", "del-concert-btn-id").addClass("del-concert-btn-class").text("Delete").appendTo($concertCard)
                         $concertCard.appendTo(concertVault)
                     }
 
