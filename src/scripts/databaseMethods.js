@@ -44,6 +44,12 @@ const databaseMethods = Object.create({}, {
                 url: `http://localhost:3000/concerts/${id}`,
                 method: "PUT",
                 data: {
+                    bandName: concert.bandName,
+                    date: concert.date,
+                    venue: concert.venue,
+                    setList: concert.setList, 
+                    mediaLinksurl: concert.mediaLinksurl,
+                    journal: concert.journal
 
                 }
             })
