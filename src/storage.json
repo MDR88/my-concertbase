@@ -32,16 +32,7 @@
   "concerts": [
     {
       "bandName": "Social Distortion",
-      "date": "",
-      "venue": "Univercity Of California Irvine",
-      "setList": "https://www.setlist.fm/setlist/social-distortion/1990/university-of-california-irvine-irvine-ca-53c727dd.html",
-      "mediaLinksurl": "http://www.mediaLinkscom",
-      "journal": "This was in Royce Hall at Irvine College",
-      "id": 0
-    },
-    {
-      "bandName": "Social Distortion",
-      "date": "",
+      "date": "1990-08-21",
       "venue": "Univercity Of California Irvine",
       "setList": "https://www.setlist.fm/setlist/social-distortion/1990/university-of-california-irvine-irvine-ca-53c727dd.html",
       "mediaLinksurl": "http://www.mediaLinkscom",
@@ -56,33 +47,6 @@
       "mediaLinksurl": "Show Links",
       "journal": "",
       "id": 2
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 3
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 4
-    },
-    {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "id": 5
     }
   ]
 }
