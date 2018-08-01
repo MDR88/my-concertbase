@@ -23,8 +23,8 @@ const databaseMethods = Object.create({}, {
         value: (id) => {
             return $.ajax({
                 url: `http://localhost:3000/concerts/${id}`,
-                method: "DELETE"
-
+                method: "DELETE",
+            
 
             })
         }

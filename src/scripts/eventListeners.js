@@ -36,39 +36,39 @@ body.addEventListener("click", () => {
         databaseMethods.addConcert(concert).then((response) => {
 
             printToDOM.addConcertToDOM()
-            // welcome.buildHome()
+        
 
         })
     }
 })
 const concertVault = document.querySelector("#concert-vault-container");
 concertVault.addEventListener("click", () => {
-
+   
+    
     if (event.target.className === "edit-concert-btn-class") {
         console.log("Edit Button Clicked")
-        const concertId = (event.target.parentNode.id)
+        
+        let concertId = (event.target.parentNode.id)
         console.log(concertId)
         databaseMethods.getConcert(concertId)
             .then((concert) => {
                 console.log("The ID On Click")
                 console.log(concert)
-                editConcertForm.editConcertForm(concert)
 
-                // Hides the EDIT Button When Clicked
-                const x = document.getElementById("edit-concert-btn-id");
-                if (x.style.display === "none") {
-                    x.style.display = "block";
-                } else {
-                    x.style.display = "none";
-                }
+                editConcertForm.editConcertForm(concert)
             })
+
 
     } else if (event.target.id === "del-concert-btn-id") {
         console.log("Delete Button Clicked")
+        const id = $(event.target).parent().attr("id");
+        databaseMethods.deleteConcert(id).then(() => {
+            clear.clearVault()
+            printToDOM.addConcertToDOM()
+        })
+     
 
     } else if (event.target.className === "save-btn") {
-
-        console.log("Save Edit Button Clicked")
 
         const $editedBandNameValue = document.getElementById("band-name-edit").value;
         const $editedDateValue = document.getElementById("concert-date-edit").value;
@@ -88,12 +88,17 @@ concertVault.addEventListener("click", () => {
         }
         console.log("Edited concert", editedConcert)
 
-        const concertId = (event.target.parentNode.parentNode.id)
+        // ConcertID stores the value of the location of the concert ID.
+        let concertId = (event.target.parentNode.parentNode.id)
+
+        // This runs the PUT Method which edits the table in storage.
         databaseMethods.putConcert(editedConcert, concertId).then(response => {
             console.log("DatabaseMethod putConcert", databaseMethods.putConcert)
+            // Clears the div that stores the list of concert logs.
             clear.clearVault()
+            //Loads the list of added concert logs from storage to the DOM
             printToDOM.addConcertToDOM()
-            // printToDOM.addShowToDOMObject()
+
         })
     }
 
