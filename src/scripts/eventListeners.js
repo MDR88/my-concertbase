@@ -39,48 +39,65 @@ body.addEventListener("click", () => {
             // welcome.buildHome()
 
         })
-    } 
+    }
 })
-    const concertVault = document.querySelector("#concert-vault-container");
-    concertVault.addEventListener("click", () => {
+const concertVault = document.querySelector("#concert-vault-container");
+concertVault.addEventListener("click", () => {
 
     if (event.target.className === "edit-concert-btn-class") {
         console.log("Edit Button Clicked")
         const concertId = (event.target.parentNode.id)
-       console.log(concertId)
+        console.log(concertId)
         databaseMethods.getConcert(concertId)
             .then((concert) => {
                 console.log("The ID On Click")
                 console.log(concert)
                 editConcertForm.editConcertForm(concert)
+
+                // Hides the EDIT Button When Clicked
+                const x = document.getElementById("edit-concert-btn-id");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
             })
 
-    } else if (event.target.id === "del-concert-btn-id"){
+    } else if (event.target.id === "del-concert-btn-id") {
         console.log("Delete Button Clicked")
 
-    }else if (event.target.className === "save-btn") {
+    } else if (event.target.className === "save-btn") {
 
-        console.log("Save Edit Button Clicked") 
-        
-        const $editedBandNameValue = document.getElementById("book-title-edit").value;
-        const $editedDateValue = document.getElementById("book-sum-edit").value;
-        const $editedVenueValue = document.getElementById("book-pages-edit").value
-      
-        const editedBook = {
-            bookTitle: $editedBookNameValue,
-            bookSum: $editedBookSumValue,
-            bookPages: $editedBookPagesValue
+        console.log("Save Edit Button Clicked")
+
+        const $editedBandNameValue = document.getElementById("band-name-edit").value;
+        const $editedDateValue = document.getElementById("concert-date-edit").value;
+        const $editedVenueValue = document.getElementById("band-venue-edit").value;
+        const $editedLinksValue = document.getElementById("media-links-edit").value;
+        const $editedSetlistValue = document.getElementById("setlist-edit").value;
+        const $editedJournalValue = document.getElementById("journal-edit").value;
+
+        const editedConcert = {
+            bandName: $editedBandNameValue,
+            date: $editedDateValue,
+            venue: $editedVenueValue,
+            journal: $editedJournalValue,
+            setList: $editedSetlistValue,
+            mediaLinksurl: $editedLinksValue
+
         }
-        console.log("EDITED BOOK!!", editedBook)
-        console.log("BOOK SLICE!!!", bookSlice)
-        databaseMethods.putBook(editedBook, bookSlice).then(response => {
-            clear.clearBookShelf()
-            printToDOM.addBookToDom()
+        console.log("Edited concert", editedConcert)
+
+        const concertId = (event.target.parentNode.parentNode.id)
+        databaseMethods.putConcert(editedConcert, concertId).then(response => {
+            console.log("DatabaseMethod putConcert", databaseMethods.putConcert)
+            clear.clearVault()
+            printToDOM.addConcertToDOM()
+            // printToDOM.addShowToDOMObject()
         })
-        console.log("DatabaseMethod Put Book")
     }
 
 
 
 
-    })
+})
