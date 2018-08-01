@@ -58,6 +58,26 @@ body.addEventListener("click", () => {
     } else if (event.target.id === "del-concert-btn-id"){
         console.log("Delete Button Clicked")
 
+    }else if (event.target.className === "save-btn") {
+
+        console.log("Save Edit Button Clicked") 
+        
+        const $editedBandNameValue = document.getElementById("book-title-edit").value;
+        const $editedDateValue = document.getElementById("book-sum-edit").value;
+        const $editedVenueValue = document.getElementById("book-pages-edit").value
+      
+        const editedBook = {
+            bookTitle: $editedBookNameValue,
+            bookSum: $editedBookSumValue,
+            bookPages: $editedBookPagesValue
+        }
+        console.log("EDITED BOOK!!", editedBook)
+        console.log("BOOK SLICE!!!", bookSlice)
+        databaseMethods.putBook(editedBook, bookSlice).then(response => {
+            clear.clearBookShelf()
+            printToDOM.addBookToDom()
+        })
+        console.log("DatabaseMethod Put Book")
     }
 
 
