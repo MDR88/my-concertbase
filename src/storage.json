@@ -33,12 +33,58 @@
     {
       "id": 0,
       "bandId": 0,
-      "date": "Date",
-      "venue": "Venue_Name",
+      "bandName": "Social Distortion",
+      "date": "April 5th, 1990",
+      "venue": "Univercity Of California Irvine",
       "journal": "Journal_Text",
       "mediaLinksurl": "http://www.mediaLinkscom",
-      "setList": "SetList",
+      "setList": "https://www.setlist.fm/setlist/social-distortion/1990/university-of-california-irvine-irvine-ca-53c727dd.html",
       "userID": 0
+    },
+    {
+      "bandName": "They Might Be Giants",
+      "date": "1992-09-19",
+      "venue": "The Coach House San Juan Capistrano",
+      "setList": "https://www.setlist.fm/setlist/they-might-be-giants/1992/the-coach-house-san-juan-capistrano-ca-2bd6e092.html",
+      "mediaLinksurl": "",
+      "journal": "",
+      "id": 1
+    },
+    {
+      "bandName": "The Ramones ",
+      "date": "1990-08-08",
+      "venue": "Irvine Meadows ",
+      "setList": "Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "",
+      "id": 2
+    },
+    {
+      "bandName": "",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "id": 3
+    },
+    {
+      "bandName": "",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "id": 4
+    },
+    {
+      "bandName": "",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "id": 5
     }
   ]
 }
