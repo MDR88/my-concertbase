@@ -9,10 +9,10 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .concertCardDiv {
-    border-radius: 200px;
+    border-radius: 20px;
     border: double rgb(146, 182, 189) .5px;
-    border-width: 66px;
-    text-align: center;
+    border-width: 56px;
+    text-align: center
 
     }
 
