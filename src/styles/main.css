@@ -16,16 +16,16 @@ body {
 
     }
 
-    #mainPage-title {
-        border-radius: 200px;
-        border: solid rgb(146, 182, 189) .5px;
-        border-width: 5px;
-        text-align: center;
+#mainPage-title {
+    border-radius: 200px;
+    border: solid rgb(146, 182, 189) .5px;
+    border-width: 5px;
+    text-align: center;
 
 
     }
 
-    #concert-form-div {
+#concert-form-div {
         display:flex;
         align-items: center;
         justify-content: center;

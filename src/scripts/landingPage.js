@@ -1,42 +1,37 @@
-
-// const $ = require("jquery")
-
-
+// Author: Michael Roberts
+//Purpose:This module creates the main landing page and is called in main.js
 
 
+const $ = require("jquery")
 
 
-// const landingPage = Object.create({}, {
-//     landingPageForm: {
-//         console.log(land)
-//         value: () => {
+const landingPage = Object.create({}, {
+    landingPageForm: {
+        value: () => {
 
-//             // Selects the main div class .base-div-container on the index
-//             const baseDiv = document.querySelector(".base-div-container");
+            // Selects the main div class .base-div-container on the index
+            const baseDiv = document.querySelector(".base-div-container");
 
-//             //created a div and gave it the class of landing-div
-//             const $landingDiv = $("<div>").addClass("landing-div");
-//             const $pEl = $("<p>")
+            //created a div and gave it the class of landing-div
+            const $landingDiv = $("<div>").addClass("landing-div")
+            const $pEl = $("<p>").appendTo($landingDiv)
 
 
-//             //Created elements with ID's
-//             const $h1myConcertBase = $("<h1>").text("MyConcertBase");
-//             $h1myConcertBase.attr("id", "h1Landing");
-//             const $loginButton = $("<button>").text("Login");
-//             $loginButton.attr("id", "login-btn");
-//             const $registerButton = $("<button>").text("Register");
-//             $registerButton.attr("id", "register-btn");
-            
-            
-//             //Appending to DOM.
-//             $registerButton.appendTo($pEl);
-//             $loginButton.appendTo($pEl);
-//             $pEl.appendTo($h1myConcertBase);
-//             $h1myConcertBase.appendTo($h1myConcertBase);
-//             $landingDiv.appendTo(baseDiv);
-//         }
-//     }
-// })
+            //Created elements with ID's
+            const $h1myConcertBase = $("<h1>").text("MyConcertBase")
+            $h1myConcertBase.attr("id", "h1Landing").appendTo($pEl);
+            const $loginButton = $("<button>").text("Login");
+            $loginButton.attr("id", "login-btn").appendTo($pEl);
+            const $registerButton = $("<button>").text("Register");
+            $registerButton.attr("id", "register-btn").appendTo($pEl);
+            $landingDiv.appendTo(baseDiv);
 
-// //exports the landdingPage Object
-// module.exports = landingPage
+        }
+
+    }
+
+})
+
+console.log("Landing Page", landingPage)
+//exports the landdingPage Object
+module.exports = landingPage
