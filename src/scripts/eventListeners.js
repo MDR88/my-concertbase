@@ -43,8 +43,11 @@ baseContainer.addEventListener("click", () => {
         console.log("Login Button Clicked")
 
 
+
     } else if (event.target.id === "register-btn") {
         console.log("register-btn Clicked")
+        
+
     }
 
 
@@ -108,13 +111,6 @@ concertVault.addEventListener("click", () => {
             printToDOM.addConcertToDOM()
 
         })
-        if (event.target.id === "login-btn") {
-            console.log("Login Button Clicked")
-
-
-        } else if (event.target.id === "login-btn") {
-            console.log("register-btn")
-        }
 
      
     }

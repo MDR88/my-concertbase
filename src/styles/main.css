@@ -32,6 +32,14 @@ body {
     }
 
 
-button {
-    border-radius: 5px;
+    .btn-div {
+        display: inline; 
+    }
+    #logIn-form-div {
+        align-content: center;
+        border-radius: 20px;
+        border: double rgb(146, 182, 189) .5px;
+        border-width: 56px;
+        text-align: center
+
     }
