@@ -40,13 +40,6 @@ body.addEventListener("click", () => {
 
         })
     }
-    else if (event.target.id === "login-btn") {
-        console.log("Login Button Clicked")
-
-
-    } else if (event.target.id === "register-btn") {
-        console.log("register-btn Clicked")
-    }
 
 })
 const concertVault = document.querySelector("#concert-vault-container");
@@ -119,7 +112,17 @@ concertVault.addEventListener("click", () => {
      
     }
 
+})
 
+const baseContainer = document.querySelector(".base-div-container");
+baseContainer.addEventListener("click", () => {
+    if (event.target.id === "login-btn") {
+        console.log("Login Button Clicked")
+
+
+    } else if (event.target.id === "register-btn") {
+        console.log("register-btn Clicked")
+    }
 
 
 
