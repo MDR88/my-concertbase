@@ -9,29 +9,37 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 .concertCardDiv {
-    border-radius: 200px;
+    border-radius: 20px;
     border: double rgb(146, 182, 189) .5px;
-    border-width: 66px;
+    border-width: 56px;
+    text-align: center
+
+    }
+
+#mainPage-title {
+    border-radius: 200px;
+    border: solid rgb(146, 182, 189) .5px;
+    border-width: 5px;
     text-align: center;
 
-    }
-
-    #mainPage-title {
-        border-radius: 200px;
-        border: solid rgb(146, 182, 189) .5px;
-        border-width: 5px;
-        text-align: center;
-
 
     }
 
-    #concert-form-div {
+#concert-form-div {
         display:flex;
         align-items: center;
         justify-content: center;
     }
 
 
-button {
-    border-radius: 5px;
+    .btn-div {
+        display: inline; 
+    }
+    #logIn-form-div {
+        align-content: center;
+        border-radius: 20px;
+        border: double rgb(146, 182, 189) .5px;
+        border-width: 56px;
+        text-align: center
+
     }

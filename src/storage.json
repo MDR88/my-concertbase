@@ -47,6 +47,24 @@
       "mediaLinksurl": "Show Links",
       "journal": "",
       "id": 2
+    },
+    {
+      "bandName": "The Cure",
+      "date": "1992-06-21",
+      "venue": "Long Beach Arena ",
+      "setList": " https://www.setlist.fm/setlist/the-cure/1992/long-beach-arena-long-beach-ca-2bd7ec6a.html",
+      "mediaLinksurl": "https://www.youtube.com/watch?v=NBlUpXbQFmY",
+      "journal": "This was the first of many Cure Shows.",
+      "id": 3
+    },
+    {
+      "bandName": "Jason Isbell",
+      "date": "2017-10-21",
+      "venue": "The Ryman",
+      "setList": "https://www.youtube.com/watch?v=qCBcQCeFn6Y",
+      "mediaLinksurl": "https://www.youtube.com/watch?v=qCBcQCeFn6Y",
+      "journal": "An amazing show!!",
+      "id": 4
     }
   ]
 }

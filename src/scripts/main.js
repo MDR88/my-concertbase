@@ -1,12 +1,12 @@
 //Author: Michael Roberts
 //Purpose: This is the main.js for the myConcertBase Web Application.
 const addConcert = require("./addConcert")
-const PrintToDom = require("./printToDOM")
+const login = require("./login")
 
 
 
-
-console.log(addConcert)
-PrintToDom.addConcertToDOM()
-addConcert.addConcertForm()
+login.buildLoginForm()
+// console.log(addConcert)
+// PrintToDom.addConcertToDOM()
+// addConcert.addConcertForm()
 
