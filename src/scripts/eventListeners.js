@@ -10,9 +10,9 @@ const homePage = require("./home")
 const editConcertForm = require("./editConcertForm")
 const clear = require("./clear")
 
-// Selecting the BODY tag and adding an event listner for actions when clicking buttons.
-const body = document.querySelector("body");
-body.addEventListener("click", () => {
+// Selecting the class of the base-container-div and adding an event listner for actions when clicking buttons.
+const baseContainer = document.querySelector(".base-div-container");
+baseContainer.addEventListener("click", () => {
     if (event.target.id === "concert-add-btn") {
         console.log("ADD CONCERT BUTTON CLICKED")
         // Capture the values of the fields and store in a variable. 
@@ -39,7 +39,14 @@ body.addEventListener("click", () => {
 
 
         })
+    }  else if (event.target.id === "login-btn") {
+        console.log("Login Button Clicked")
+
+
+    } else if (event.target.id === "register-btn") {
+        console.log("register-btn Clicked")
     }
+
 
 })
 const concertVault = document.querySelector("#concert-vault-container");
@@ -111,19 +118,5 @@ concertVault.addEventListener("click", () => {
 
      
     }
-
-})
-
-const baseContainer = document.querySelector(".base-div-container");
-baseContainer.addEventListener("click", () => {
-    if (event.target.id === "login-btn") {
-        console.log("Login Button Clicked")
-
-
-    } else if (event.target.id === "register-btn") {
-        console.log("register-btn Clicked")
-    }
-
-
 
 })
