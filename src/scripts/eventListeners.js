@@ -36,18 +36,26 @@ body.addEventListener("click", () => {
         databaseMethods.addConcert(concert).then((response) => {
 
             printToDOM.addConcertToDOM()
-        
+
 
         })
     }
+    else if (event.target.id === "login-btn") {
+        console.log("Login Button Clicked")
+
+
+    } else if (event.target.id === "register-btn") {
+        console.log("register-btn Clicked")
+    }
+
 })
 const concertVault = document.querySelector("#concert-vault-container");
 concertVault.addEventListener("click", () => {
-   
-    
+
+
     if (event.target.className === "edit-concert-btn-class") {
         console.log("Edit Button Clicked")
-        
+
         let concertId = (event.target.parentNode.id)
         console.log(concertId)
         databaseMethods.getConcert(concertId)
@@ -66,7 +74,7 @@ concertVault.addEventListener("click", () => {
             clear.clearVault()
             printToDOM.addConcertToDOM()
         })
-     
+
 
     } else if (event.target.className === "save-btn") {
 
@@ -100,7 +108,17 @@ concertVault.addEventListener("click", () => {
             printToDOM.addConcertToDOM()
 
         })
+        if (event.target.id === "login-btn") {
+            console.log("Login Button Clicked")
+
+
+        } else if (event.target.id === "login-btn") {
+            console.log("register-btn")
+        }
+
+     
     }
+
 
 
 
