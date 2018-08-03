@@ -2,9 +2,15 @@
   "users": [
     {
       "id": 0,
-      "userName": "Display_Name",
-      "email": "@test.com",
-      "password": "Test_Password"
+      "userName": "mdr88",
+      "email": "mikedroberts88@gmail.com",
+      "password": "Simon909"
+    },
+    {
+      "id": 1,
+      "userName": "Simon",
+      "email": "mikedroberts88@gmail.com",
+      "password": "Simon909"
     }
   ],
   "bands": [

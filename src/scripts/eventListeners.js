@@ -41,12 +41,17 @@ baseContainer.addEventListener("click", () => {
         })
     }  else if (event.target.id === "login-btn") {
         console.log("Login Button Clicked")
-
+        const logInName = $("#username-field").val();
+        const logInPass= $("#login-pass-feild").val();
+        databaseMethods.getUserName(logInName).then(user => { 
+                    console.log("user", user)
+                
+         })   
 
 
     } else if (event.target.id === "register-btn") {
         console.log("register-btn Clicked")
-        
+         
 
     }
 

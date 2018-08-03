@@ -64,9 +64,25 @@ const databaseMethods = Object.create({}, {
             })
         }
     },
-
-
-
+    getUser: {
+        value: (id) => {
+            return $.ajax(`http://localhost:3000/users/${id}`)
+        }
+    },
+    getAllUsers: {
+        value: () => {
+            return $.ajax("http://localhost:3000/users")
+        }
+    },
+    getUserName: {
+        value: (userName) => {
+        return $.ajax({
+            url: `http://localhost:3000/users?userName=${userName}`,
+            method: "GET",
+        
+        })
+    }
+}
 })
 
 module.exports = databaseMethods;
