@@ -79,14 +79,44 @@
       "id": 5
     },
     {
-      "bandName": "",
-      "date": "",
-      "venue": "",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
+      "bandName": "The Stray Cats",
+      "date": "2018-08-14",
+      "venue": "Ryman",
+      "setList": "Setlist",
+      "mediaLinksurl": "show lists",
+      "journal": "journal",
       "userId": "2",
-      "id": 6
+      "id": 7
+    },
+    {
+      "bandName": "The Cure",
+      "date": "2018-08-22",
+      "venue": "Long Beach",
+      "setList": "Link to Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "0",
+      "id": 8
+    },
+    {
+      "bandName": "The Ramones",
+      "date": "2018-08-21",
+      "venue": "Irvine",
+      "setList": "Link to Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "0",
+      "id": 9
+    },
+    {
+      "bandName": "Social Distortion",
+      "date": "2018-08-03",
+      "venue": "Irvine",
+      "setList": "Link to Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "0",
+      "id": 10
     }
   ]
 }
