@@ -22,7 +22,7 @@ baseContainer.addEventListener("click", () => {
         const $concertSetlistValue = document.getElementById("concert-setlist").value;
         const $concertLinksValue = document.getElementById("concert-links").value;
         const $concertJournalValue = document.getElementById("concert-journal").value;
-
+        //const $userConcertId = 
         // Take the variables that store the values and create an object with the fields that are in the Concert table in storage.
         const concert = {
             bandName: $bandNameValue,
@@ -31,6 +31,7 @@ baseContainer.addEventListener("click", () => {
             setList: $concertSetlistValue,
             mediaLinksurl: $concertLinksValue,
             journal: $concertJournalValue
+            //userId:
         }
 
         databaseMethods.addConcert(concert).then((response) => {
@@ -41,10 +42,31 @@ baseContainer.addEventListener("click", () => {
         })
     }  else if (event.target.id === "login-btn") {
         console.log("Login Button Clicked")
+
+        //Storing values of the username and password field into variables.
         const logInName = $("#username-field").val();
-        const logInPass= $("#login-pass-feild").val();
-        databaseMethods.getUserName(logInName).then(user => { 
-                    console.log("user", user)
+        const logInPass= $("#login-pass-field").val();
+        // Get request to my API and passing the paramaters of the login and Password values.
+        databaseMethods.getUserName(logInName, logInPass).then(user => { console.log(" TEST")
+            console.log(user[0].password, logInPass) 
+            
+            if (user[0].password === logInPass) { console.log("The Passwords Are equal")
+        
+                const saveDatabase = function(databaseObject, localStorageKey) { console.log("LocalStorage Key", localStorageKey)
+                    const stringifiedDatabase = JSON.stringify(databaseObject)
+                    localStorage.setItem(localStorageKey, stringifiedDatabase)
+
+                  }
+                  saveDatabase(user[0].id, "USER ID")
+                  console.log(user[0].id)
+                console.log("Local STORAGE")
+                   clear.clearAll()
+            printToDOM.addConcertToDOM()
+
+             }      
+            
+            console.log("user", user)
+            console.log("User Password", logInPass)
                 
          })   
 

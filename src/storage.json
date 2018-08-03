@@ -4,13 +4,19 @@
       "id": 0,
       "userName": "mdr88",
       "email": "mikedroberts88@gmail.com",
-      "password": "Simon909"
+      "password": "mpass"
     },
     {
       "id": 1,
-      "userName": "Simon",
-      "email": "mikedroberts88@gmail.com",
-      "password": "Simon909"
+      "userName": "simon",
+      "email": "simonGmail@gmail.com",
+      "password": "spass"
+    },
+    {
+      "id": 2,
+      "userName": "jordan",
+      "email": "jordan@gmail.com",
+      "password": "jpass"
     }
   ],
   "bands": [
