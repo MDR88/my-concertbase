@@ -2,8 +2,6 @@
 //Purpose: Prints the object below to the DOM.
 const databaseMethods = require("./databaseMethods")
 const $ = require("jquery")
-const clear = require("./clear")
-const addConcert = require("./addConcert")
 
 
 

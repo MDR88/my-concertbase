@@ -40,40 +40,65 @@ baseContainer.addEventListener("click", () => {
 
 
         })
-    }  else if (event.target.id === "login-btn") {
+    } else if (event.target.id === "login-btn") {
         console.log("Login Button Clicked")
 
-        //Storing values of the username and password field into variables.
+        //Storing values of the username and password fields into variables.
         const logInName = $("#username-field").val();
-        const logInPass= $("#login-pass-field").val();
+        const logInPass = $("#login-pass-field").val();
         // Get request to my API and passing the paramaters of the login and Password values.
-        databaseMethods.getUserName(logInName, logInPass).then(user => { console.log(" TEST")
-            console.log(user[0].password, logInPass) 
-            
-            if (user[0].password === logInPass) { console.log("The Passwords Are equal")
-        
-                const saveDatabase = function(databaseObject, localStorageKey) { console.log("LocalStorage Key", localStorageKey)
+        databaseMethods.getUserName(logInName, logInPass).then(user => {
+            console.log(" TEST")
+            console.log(user[0].password, logInPass)
+
+            // Conditional Statement, if the value of the users login password match the password the SaveDatabase function runs.
+            if (user[0].password === logInPass) {
+                console.log("The Passwords Are equal")
+
+                // The SaveDatabase function saves the databaseObject "User's username and password loaded from storage" and the key "the USER ID".
+                const saveDatabase = function (databaseObject, localStorageKey) {
+                    console.log("LocalStorage Key", localStorageKey)
+
+                    // The stringifiedDatabase varible holds the stringified user ID object.
                     const stringifiedDatabase = JSON.stringify(databaseObject)
+
+                    // Sets the item to show the localStorage key followed by the stringified database. This can be viewed in local storage.
                     localStorage.setItem(localStorageKey, stringifiedDatabase)
+                }
 
-                  }
-                  saveDatabase(user[0].id, "USER ID")
-                  console.log(user[0].id)
+                // Calling on the SaveDatabase function with the username and password.
+                // "The Username is an object and the array are where the propeties are to the USER object.
+                // Then making "USER ID" the key.
+                saveDatabase(user[0].id, "USER ID")
+
+
+                console.log(user[0].id)
                 console.log("Local STORAGE")
-                   clear.clearAll()
-            printToDOM.addConcertToDOM()
 
-             }      
-            
+                // Clears the DOM
+                clear.clearAll()
+
+                // Loads the add concert form.
+                addConcert.addConcertForm()
+
+                //loads the concerts already added from stroage.
+                printToDOM.addConcertToDOM()
+
+
+            } else if(user[0].password !== logInPass) {
+                alert("Incorrect Password")
+
+            }
+
             console.log("user", user)
             console.log("User Password", logInPass)
-                
-         })   
+
+        })
 
 
     } else if (event.target.id === "register-btn") {
         console.log("register-btn Clicked")
-         
+
 
     }
 
@@ -139,7 +164,7 @@ concertVault.addEventListener("click", () => {
 
         })
 
-     
+
     }
 
 })
