@@ -22,7 +22,14 @@ baseContainer.addEventListener("click", () => {
         const $concertSetlistValue = document.getElementById("concert-setlist").value;
         const $concertLinksValue = document.getElementById("concert-links").value;
         const $concertJournalValue = document.getElementById("concert-journal").value;
-        //const $userConcertId = 
+        
+        const loadDatabase = function(localStorageKey) {
+            const databaseString = localStorage.getItem(localStorageKey)
+            return JSON.parse(databaseString)
+          }
+          const x = loadDatabase("USER ID")
+          console.log("Loading The Database", x)
+
         // Take the variables that store the values and create an object with the fields that are in the Concert table in storage.
         const concert = {
             bandName: $bandNameValue,
@@ -30,8 +37,8 @@ baseContainer.addEventListener("click", () => {
             venue: $concertVenueValue,
             setList: $concertSetlistValue,
             mediaLinksurl: $concertLinksValue,
-            journal: $concertJournalValue
-            //userId:
+            journal: $concertJournalValue,
+            userId: x
         }
 
         databaseMethods.addConcert(concert).then((response) => {
@@ -67,7 +74,7 @@ baseContainer.addEventListener("click", () => {
                 }
 
                 // Calling on the SaveDatabase function with the username and password.
-                // "The Username is an object and the array are where the propeties are to the USER object.
+                // "The User is an object and the array are where the propeties are to the USER object.
                 // Then making "USER ID" the key.
                 saveDatabase(user[0].id, "USER ID")
 
@@ -86,7 +93,7 @@ baseContainer.addEventListener("click", () => {
 
 
             } else if(user[0].password !== logInPass) {
-                alert("Incorrect Password")
+                alert("Sorry, you have entered an incorrect password, please try again.")
 
             }
 
