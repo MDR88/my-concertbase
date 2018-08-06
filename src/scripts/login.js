@@ -22,7 +22,7 @@ const loginForm = Object.create({}, {
             const $userNameInput = $("<input />").attr("id", "username-field").attr("placeholder", "Username").appendTo($logInFormDiv)
             //Password Field
             const $paraPassword = $("<p>").text("Password:").appendTo($logInFormDiv);
-            const $regPass = $("<input />").attr("type", "password").attr("id", "regPass").attr("placeholder", "Password").appendTo($logInFormDiv);
+            const $regPass = $("<input />").attr("type", "password").attr("id", "login-pass-field").attr("placeholder", "Password").appendTo($logInFormDiv);
     
             
             // A Button DIV for the Register and Login Buttons.

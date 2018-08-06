@@ -32,6 +32,7 @@ const addConcertObject = Object.create({}, {
             const $concertJournalInput = $("<input>").attr("id", "concert-journal").attr("type", "textarea").attr("placeholder", "Concert Journal").appendTo($concertFormDiv)
 
             const $addConcertBtn = $("<button>").attr("id", "concert-add-btn").text("Add Your Concert").appendTo($concertFormDiv)
+            const $logOutBtn = $("<button>").attr("id", "logOut-btn").text("Log Out").appendTo($concertFormDiv)
 
         }
 
