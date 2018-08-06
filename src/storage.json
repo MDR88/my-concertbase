@@ -71,6 +71,42 @@
       "password": "lennon",
       "favoriteBand": "The Beatles",
       "id": 7
+    },
+    {
+      "userName": "",
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "password": "",
+      "favoriteBand": "",
+      "id": 8
+    },
+    {
+      "userName": "browns",
+      "firstName": "Jim",
+      "lastName": "Brown",
+      "email": "browns@gmail.com",
+      "password": "browns",
+      "favoriteBand": "",
+      "id": 9
+    },
+    {
+      "userName": "jisie",
+      "firstName": "Jissie",
+      "lastName": "David",
+      "email": "j@email.com",
+      "password": "password",
+      "favoriteBand": "band",
+      "id": 10
+    },
+    {
+      "userName": "fred",
+      "firstName": "Fred",
+      "lastName": "fred",
+      "email": "fred",
+      "password": "fred",
+      "favoriteBand": "fred",
+      "id": 11
     }
   ],
   "bands": [
@@ -361,6 +397,96 @@
       "journal": "",
       "userId": "4",
       "id": 29
+    },
+    {
+      "bandName": "First Concert",
+      "date": "1974-06-25",
+      "venue": "Browns Stadium",
+      "setList": "Setlist",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "9",
+      "id": 30
+    },
+    {
+      "bandName": "Second Concert",
+      "date": "1974-06-25",
+      "venue": "Browns Stadium",
+      "setList": "Setlist",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "9",
+      "id": 31
+    },
+    {
+      "bandName": "Third Concert",
+      "date": "1974-06-25",
+      "venue": "Browns Stadium",
+      "setList": "Setlist",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "9",
+      "id": 32
+    },
+    {
+      "bandName": "Concert 1",
+      "date": "2018-08-15",
+      "venue": "Venue",
+      "setList": "Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "10",
+      "id": 33
+    },
+    {
+      "bandName": "Concert 2",
+      "date": "2018-08-15",
+      "venue": "Venue",
+      "setList": "Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "10",
+      "id": 34
+    },
+    {
+      "bandName": "Concert 3",
+      "date": "2018-08-15",
+      "venue": "Venue",
+      "setList": "Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "10",
+      "id": 35
+    },
+    {
+      "bandName": "concert 1",
+      "date": "2018-08-15",
+      "venue": "Concert Venue 1",
+      "setList": "Concert Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "11",
+      "id": 36
+    },
+    {
+      "bandName": "concert 2",
+      "date": "2018-08-15",
+      "venue": "Concert Venue 1",
+      "setList": "Concert Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "11",
+      "id": 37
+    },
+    {
+      "bandName": "concert 3",
+      "date": "2018-08-15",
+      "venue": "Concert Venue 1",
+      "setList": "Concert Setlist",
+      "mediaLinksurl": "Show Links",
+      "journal": "Journal",
+      "userId": "11",
+      "id": 38
     }
   ]
 }
