@@ -81,11 +81,10 @@
     {
       "bandName": "The Stray Cats",
       "date": "2018-08-14",
-      "venue": "Ryman",
+      "venue": "New Show",
       "setList": "Setlist",
       "mediaLinksurl": "show lists",
       "journal": "journal",
-      "userId": "2",
       "id": 7
     },
     {
@@ -95,7 +94,6 @@
       "setList": "Link to Setlist",
       "mediaLinksurl": "Show Links",
       "journal": "Journal",
-      "userId": "0",
       "id": 8
     },
     {
@@ -117,6 +115,35 @@
       "journal": "Journal",
       "userId": "0",
       "id": 10
+    },
+    {
+      "bandName": "band 1",
+      "date": "2018-08-14",
+      "venue": "new",
+      "setList": "new",
+      "mediaLinksurl": "new",
+      "journal": "",
+      "id": 11
+    },
+    {
+      "bandName": "band 2",
+      "date": "2018-08-14",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "2",
+      "id": 12
+    },
+    {
+      "bandName": "New Band",
+      "date": "2018-08-14",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "2",
+      "id": 14
     }
   ]
 }
