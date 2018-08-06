@@ -9,6 +9,8 @@ const printToDOM = require("./printToDOM")
 const homePage = require("./home")
 const editConcertForm = require("./editConcertForm")
 const clear = require("./clear")
+const login = require("./login")
+const regForm = require("./regForm")
 
 // Selecting the class of the base-container-div and adding an event listner for actions when clicking buttons.
 const baseContainer = document.querySelector(".base-div-container");
@@ -105,7 +107,48 @@ baseContainer.addEventListener("click", () => {
 
     } else if (event.target.id === "register-btn") {
         console.log("register-btn Clicked")
+        clear.clearAll()
+        clear.clearVault()
+        regForm.buildRegForm()
 
+
+
+    } else if (event.target.id === "reg-sub-btn") {
+        console.log("reg-sub-btn Submit Button Clicked!")
+
+        // Capture the values of the input fields.
+        const $regFirstNameValue = document.getElementById("first-name-input").value;
+        const $regLastNameValue = document.getElementById("last-name-input").value;
+        const $regUserNameValue = document.getElementById("username-input").value;
+        const $regEmailValue = document.getElementById("reg-email").value;
+        const $regPasswordValue = document.getElementById("regPass").value;
+        const $regFavBandValue = document.getElementById("fav-band-name").value;
+
+        const newUser = {
+            userName: $regUserNameValue,
+            firstName: $regFirstNameValue,
+            lastName: $regLastNameValue,
+            email: $regEmailValue,
+            password: $regPasswordValue,
+            favoriteBand: $regFavBandValue,
+        }
+        console.log("Added User!!", newUser)
+        databaseMethods.addUser(newUser).then((response) => {
+            clear.clearVault()
+            clear.clearAll()
+            login.buildLoginForm()
+
+
+        })
+
+
+    } else if (event.target.id === "logOut-btn") {
+        console.log("logOut-btn Clicked")
+        //Clears both div's on the index.
+        clear.clearAll()
+        clear.clearVault()
+        // Loads the login screen
+        login.buildLoginForm()
 
     }
 
@@ -152,7 +195,7 @@ concertVault.addEventListener("click", () => {
             const databaseString = localStorage.getItem(localStorageKey)
             return JSON.parse(databaseString)
         }
-        // Stores the user ID in the concertUserId value. The user ID links the concert that was added by the user.
+        // Stores the user ID in the concertUserId varible. The user ID links the concert that was added by the user.
         const $concertUserId = loadDatabase("USER ID")
 
         const editedConcert = {

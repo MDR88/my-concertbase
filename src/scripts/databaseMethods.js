@@ -93,6 +93,14 @@ const databaseMethods = Object.create({}, {
         
         })
     }
+},    addUser: {
+    value: (newUser) => {
+        return $.ajax({
+            url: "http://localhost:3000/users",
+            method: "POST",
+            data: newUser
+        })
+    }
 }
 })
 

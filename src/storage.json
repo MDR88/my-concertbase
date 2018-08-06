@@ -4,19 +4,73 @@
       "id": 0,
       "userName": "mdr88",
       "email": "mikedroberts88@gmail.com",
-      "password": "mpass"
+      "password": "mpass",
+      "favoriteBand": "Favorite Band",
+      "firstName": "FIRST NAME",
+      "lastName": "LAST NAME"
     },
     {
       "id": 1,
       "userName": "simon",
       "email": "simonGmail@gmail.com",
-      "password": "spass"
+      "password": "spass",
+      "favoriteBand": "Favorite Band",
+      "firstName": "FIRST NAME",
+      "lastName": "LAST NAME"
     },
     {
       "id": 2,
       "userName": "jordan",
       "email": "jordan@gmail.com",
-      "password": "jpass"
+      "password": "jpass",
+      "favoriteBand": "Favorite Band",
+      "firstName": "FIRST NAME",
+      "lastName": "LAST NAME"
+    },
+    {
+      "userName": "Username",
+      "firstName": "First",
+      "lastName": "Last",
+      "email": "email",
+      "password": "password",
+      "favoriteBand": "Cure",
+      "id": 3
+    },
+    {
+      "userName": "Eagle",
+      "firstName": "Joe",
+      "lastName": "Walsh",
+      "email": "Eagle@gmail.com",
+      "password": "eagle",
+      "favoriteBand": "The Eagles",
+      "id": 4
+    },
+    {
+      "userName": "Eagle",
+      "firstName": "Joe",
+      "lastName": "Walsh",
+      "email": "Eagle@gmail.com",
+      "password": "eagle",
+      "favoriteBand": "The Eagles",
+      "id": 5
+    },
+    {
+      "userName": "bassman",
+      "firstName": "Paul",
+      "lastName": "McCartney",
+      "email": "",
+      "password": "bass",
+      "favoriteBand": "",
+      "id": 6
+    },
+    {
+      "userName": "lennon",
+      "firstName": "John",
+      "lastName": "Lennon",
+      "email": "lennon",
+      "password": "lennon",
+      "favoriteBand": "The Beatles",
+      "id": 7
     }
   ],
   "bands": [
@@ -247,6 +301,66 @@
       "journal": "",
       "userId": "0",
       "id": 23
+    },
+    {
+      "bandName": "Amanda Shires ",
+      "date": "2018-08-22",
+      "venue": "The Ryman",
+      "setList": "Setlist",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 24
+    },
+    {
+      "bandName": "Another Concert",
+      "date": "2018-08-15",
+      "venue": "Venue",
+      "setList": "Setlist",
+      "mediaLinksurl": "Links ",
+      "journal": "My Journal",
+      "userId": "3",
+      "id": 25
+    },
+    {
+      "bandName": "The Eagles",
+      "date": "2018-08-08",
+      "venue": "First",
+      "setList": "first",
+      "mediaLinksurl": "First",
+      "journal": "First",
+      "userId": "4",
+      "id": 26
+    },
+    {
+      "bandName": "Second Show",
+      "date": "2018-08-21",
+      "venue": "New",
+      "setList": "New",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "4",
+      "id": 27
+    },
+    {
+      "bandName": "Third Show",
+      "date": "2018-08-21",
+      "venue": "New",
+      "setList": "New",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "4",
+      "id": 28
+    },
+    {
+      "bandName": "fourth Show",
+      "date": "2018-08-21",
+      "venue": "New",
+      "setList": "New",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "4",
+      "id": 29
     }
   ]
 }
