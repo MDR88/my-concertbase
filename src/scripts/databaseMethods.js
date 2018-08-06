@@ -48,17 +48,20 @@ const databaseMethods = Object.create({}, {
         }
     }, putConcert: {
         value: (concert, id) => {
+            console.log("CONCERT", concert)
             return $.ajax({
                 url: `http://localhost:3000/concerts/${id}`,
                 method: "PUT",
                 data: {
+                    
                     bandName: concert.bandName,
                     date: concert.date,
                     venue: concert.venue,
                     setList: concert.setList, 
                     mediaLinksurl: concert.mediaLinksurl,
-                    journal: concert.journal
-
+                    journal: concert.journal,
+                    userId: concert.userId
+        
                 }
             })
         }

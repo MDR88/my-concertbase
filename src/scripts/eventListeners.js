@@ -22,13 +22,13 @@ baseContainer.addEventListener("click", () => {
         const $concertSetlistValue = document.getElementById("concert-setlist").value;
         const $concertLinksValue = document.getElementById("concert-links").value;
         const $concertJournalValue = document.getElementById("concert-journal").value;
-        
-        const loadDatabase = function(localStorageKey) {
+
+        const loadDatabase = function (localStorageKey) {
             const databaseString = localStorage.getItem(localStorageKey)
             return JSON.parse(databaseString)
-          }
-          const x = loadDatabase("USER ID")
-          console.log("Loading The Database", x)
+        }
+        const x = loadDatabase("USER ID")
+        console.log("Loading The Database", x)
 
         // Take the variables that store the values and create an object with the fields that are in the Concert table in storage.
         const concert = {
@@ -42,7 +42,7 @@ baseContainer.addEventListener("click", () => {
         }
 
         databaseMethods.addConcert(concert).then((response) => {
-
+            clear.clearVault()
             printToDOM.addConcertToDOM()
 
 
@@ -92,7 +92,7 @@ baseContainer.addEventListener("click", () => {
                 printToDOM.addConcertToDOM()
 
 
-            } else if(user[0].password !== logInPass) {
+            } else if (user[0].password !== logInPass) {
                 alert("Sorry, you have entered an incorrect password, please try again.")
 
             }
@@ -140,12 +140,20 @@ concertVault.addEventListener("click", () => {
 
     } else if (event.target.className === "save-btn") {
 
+        // Captures the values of the edited fields.
         const $editedBandNameValue = document.getElementById("band-name-edit").value;
         const $editedDateValue = document.getElementById("concert-date-edit").value;
         const $editedVenueValue = document.getElementById("band-venue-edit").value;
         const $editedLinksValue = document.getElementById("media-links-edit").value;
         const $editedSetlistValue = document.getElementById("setlist-edit").value;
         const $editedJournalValue = document.getElementById("journal-edit").value;
+        // Loads the users ID from local storage.
+        const loadDatabase = function (localStorageKey) {
+            const databaseString = localStorage.getItem(localStorageKey)
+            return JSON.parse(databaseString)
+        }
+        // Stores the user ID in the concertUserId value. The user ID links the concert that was added by the user.
+        const $concertUserId = loadDatabase("USER ID")
 
         const editedConcert = {
             bandName: $editedBandNameValue,
@@ -153,7 +161,8 @@ concertVault.addEventListener("click", () => {
             venue: $editedVenueValue,
             journal: $editedJournalValue,
             setList: $editedSetlistValue,
-            mediaLinksurl: $editedLinksValue
+            mediaLinksurl: $editedLinksValue,
+            userId: $concertUserId
 
         }
         console.log("Edited concert", editedConcert)
@@ -161,12 +170,15 @@ concertVault.addEventListener("click", () => {
         // ConcertID stores the value of the location of the concert ID.
         let concertId = (event.target.parentNode.parentNode.id)
 
+
         // This runs the PUT Method which edits the table in storage.
         databaseMethods.putConcert(editedConcert, concertId).then(response => {
             console.log("DatabaseMethod putConcert", databaseMethods.putConcert)
             // Clears the div that stores the list of concert logs.
+
             clear.clearVault()
             //Loads the list of added concert logs from storage to the DOM
+
             printToDOM.addConcertToDOM()
 
         })
