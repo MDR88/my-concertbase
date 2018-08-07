@@ -69,7 +69,7 @@ baseContainer.addEventListener("click", () => {
                     console.log("LocalStorage Key", localStorageKey)
 
                     // The stringifiedDatabase varible holds the stringified user ID object.
-                    const stringifiedDatabase = JSON.stringify(databaseObject)
+                    let stringifiedDatabase = JSON.stringify(databaseObject)
 
                     // Sets the item to show the localStorage key followed by the stringified database. This can be viewed in local storage.
                     localStorage.setItem(localStorageKey, stringifiedDatabase)
@@ -81,8 +81,8 @@ baseContainer.addEventListener("click", () => {
                 saveDatabase(user[0].id, "USER ID")
 
 
-                console.log(user[0].id)
-                console.log("Local STORAGE")
+                console.log("USER ID", user[0].id)
+
 
                 // Clears the DOM
                 clear.clearAll()
@@ -133,10 +133,33 @@ baseContainer.addEventListener("click", () => {
             favoriteBand: $regFavBandValue,
         }
         console.log("Added User!!", newUser)
-        databaseMethods.addUser(newUser).then((response) => {
+        databaseMethods.addUser(newUser).then((user) => {
+            console.log("USER CHANGED FROM RESPONSE!!!", user)
+
+            // The SaveDatabase function saves the 
+            const saveDatabase = function (databaseObject, localStorageKey) {
+                console.log("LocalStorage Key", localStorageKey)
+                console.log("database Object!!", localStorageKey)
+
+                // The stringifiedDatabase varible holds the stringified user ID object.
+                const stringifiedDatabase = JSON.stringify(databaseObject)
+
+                // Sets the item to show the localStorage key followed by the stringified database. This can be viewed in local storage.
+                localStorage.setItem(localStorageKey, stringifiedDatabase)
+        
+            }
+
+            saveDatabase(user.id, "User ID")
+
             clear.clearVault()
             clear.clearAll()
-            login.buildLoginForm()
+                // Loads the add concert form.
+                addConcert.addConcertForm()
+
+                //loads the concerts already added from stroage.
+                printToDOM.addConcertToDOM()
+
+            //login.buildLoginForm()
 
 
         })

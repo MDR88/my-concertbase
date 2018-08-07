@@ -17,12 +17,12 @@ const editConcertFormObject = Object.create({}, {
             const $pEl = $("<p>").appendTo($editConcertFormDiv);
 
             //Creates the input fields and ID's.
-            const $bandNameEdit = $("<input />").attr("id", "band-name-edit").appendTo($editConcertFormDiv);
+            const $bandNameEdit = $("<input />").attr("id", "band-name-edit").attr("placeholder", "Band Name").appendTo($editConcertFormDiv);
             const $concertDateEdit = $("<input />").attr("type", "date").attr("id", "concert-date-edit").appendTo($editConcertFormDiv);
-            const $bandVenueEdit = $("<input />").attr("id", "band-venue-edit").appendTo($editConcertFormDiv);
-            const $mediaLinksEdit = $("<input />").attr("id", "media-links-edit").appendTo($editConcertFormDiv);
-            const $setListEdit = $("<input />").attr("id", "setlist-edit").appendTo($editConcertFormDiv);
-            const $journalEdit = $("<input />").attr("id", "journal-edit").attr("type", "textarea").appendTo($editConcertFormDiv);
+            const $bandVenueEdit = $("<input />").attr("id", "band-venue-edit").attr("placeholder", "Concert Venue").appendTo($editConcertFormDiv);
+            const $mediaLinksEdit = $("<input />").attr("id", "media-links-edit").attr("placeholder", "Media Links").appendTo($editConcertFormDiv);
+            const $setListEdit = $("<input />").attr("id", "setlist-edit").attr("placeholder", "Concert Setlist").appendTo($editConcertFormDiv);
+            const $journalEdit = $("<input />").attr("id", "journal-edit").attr("type", "textarea").attr("placeholder", "My Journal").appendTo($editConcertFormDiv);
 
             
             
