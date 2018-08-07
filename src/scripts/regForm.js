@@ -35,7 +35,7 @@ const regForm = Object.create({}, {
             const $bandFavLabel = $("<label>").attr("for", "fav-band-name").text("Band Name")
             const $bandFavInput = $("<input>").attr("id", "fav-band-name").attr("placeholder", "Favorite Band Name").appendTo($formDiv)
 
-            const $regSubBtn = $("<button>").attr("type", "button").text("CLick To Submit and Log-in").attr("id", "reg-sub-btn").appendTo($formDiv);
+            const $regSubBtn = $("<button>").attr("type", "button").text("Submit and Log-in").attr("id", "reg-sub-btn").appendTo($formDiv);
         
             $formDiv.appendTo(baseDiv);
 

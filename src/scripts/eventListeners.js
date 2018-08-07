@@ -29,7 +29,7 @@ baseContainer.addEventListener("click", () => {
             const databaseString = localStorage.getItem(localStorageKey)
             return JSON.parse(databaseString)
         }
-        const x = loadDatabase("USER ID")
+        const x = loadDatabase("User ID")
         console.log("Loading The Database", x)
 
         // Take the variables that store the values and create an object with the fields that are in the Concert table in storage.
@@ -78,7 +78,7 @@ baseContainer.addEventListener("click", () => {
                 // Calling on the SaveDatabase function with the username and password.
                 // "The User is an object and the array are where the propeties are to the USER object.
                 // Then making "USER ID" the key.
-                saveDatabase(user[0].id, "USER ID")
+                saveDatabase(user[0].id, "User ID")
 
 
                 console.log("USER ID", user[0].id)
@@ -219,7 +219,7 @@ concertVault.addEventListener("click", () => {
             return JSON.parse(databaseString)
         }
         // Stores the user ID in the concertUserId varible. The user ID links the concert that was added by the user.
-        const $concertUserId = loadDatabase("USER ID")
+        const $concertUserId = loadDatabase("User ID")
 
         const editedConcert = {
             bandName: $editedBandNameValue,

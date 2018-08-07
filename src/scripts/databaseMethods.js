@@ -15,9 +15,10 @@ const databaseMethods = Object.create({}, {
             // pull userID from local storage here. 
             const loadDatabase = function(localStorageKey) {
                 const databaseString = localStorage.getItem(localStorageKey)
+                console.log("database string", databaseString)
                 return JSON.parse(databaseString)
               }
-              const concertUserId = loadDatabase("USER ID")
+              const concertUserId = loadDatabase("User ID")
               console.log("Loads UserID From Database to Add Concert", concertUserId)
             //change query string to use string interpelation using User ID.
             return $.ajax(`http://localhost:3000/concerts?userId=${concertUserId}`)
