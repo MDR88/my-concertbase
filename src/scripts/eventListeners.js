@@ -29,7 +29,7 @@ baseContainer.addEventListener("click", () => {
             const databaseString = localStorage.getItem(localStorageKey)
             return JSON.parse(databaseString)
         }
-        const x = loadDatabase("USER ID")
+        const x = loadDatabase("User ID")
         console.log("Loading The Database", x)
 
         // Take the variables that store the values and create an object with the fields that are in the Concert table in storage.
@@ -69,7 +69,7 @@ baseContainer.addEventListener("click", () => {
                     console.log("LocalStorage Key", localStorageKey)
 
                     // The stringifiedDatabase varible holds the stringified user ID object.
-                    const stringifiedDatabase = JSON.stringify(databaseObject)
+                    let stringifiedDatabase = JSON.stringify(databaseObject)
 
                     // Sets the item to show the localStorage key followed by the stringified database. This can be viewed in local storage.
                     localStorage.setItem(localStorageKey, stringifiedDatabase)
@@ -78,11 +78,11 @@ baseContainer.addEventListener("click", () => {
                 // Calling on the SaveDatabase function with the username and password.
                 // "The User is an object and the array are where the propeties are to the USER object.
                 // Then making "USER ID" the key.
-                saveDatabase(user[0].id, "USER ID")
+                saveDatabase(user[0].id, "User ID")
 
 
-                console.log(user[0].id)
-                console.log("Local STORAGE")
+                console.log("USER ID", user[0].id)
+
 
                 // Clears the DOM
                 clear.clearAll()
@@ -133,10 +133,33 @@ baseContainer.addEventListener("click", () => {
             favoriteBand: $regFavBandValue,
         }
         console.log("Added User!!", newUser)
-        databaseMethods.addUser(newUser).then((response) => {
+        databaseMethods.addUser(newUser).then((user) => {
+            console.log("USER CHANGED FROM RESPONSE!!!", user)
+
+            // The SaveDatabase function saves the 
+            const saveDatabase = function (databaseObject, localStorageKey) {
+                console.log("LocalStorage Key", localStorageKey)
+                console.log("database Object!!", localStorageKey)
+
+                // The stringifiedDatabase varible holds the stringified user ID object.
+                const stringifiedDatabase = JSON.stringify(databaseObject)
+
+                // Sets the item to show the localStorage key followed by the stringified database. This can be viewed in local storage.
+                localStorage.setItem(localStorageKey, stringifiedDatabase)
+        
+            }
+
+            saveDatabase(user.id, "User ID")
+
             clear.clearVault()
             clear.clearAll()
-            login.buildLoginForm()
+                // Loads the add concert form.
+                addConcert.addConcertForm()
+
+                //loads the concerts already added from stroage.
+                printToDOM.addConcertToDOM()
+
+            //login.buildLoginForm()
 
 
         })
@@ -196,7 +219,7 @@ concertVault.addEventListener("click", () => {
             return JSON.parse(databaseString)
         }
         // Stores the user ID in the concertUserId varible. The user ID links the concert that was added by the user.
-        const $concertUserId = loadDatabase("USER ID")
+        const $concertUserId = loadDatabase("User ID")
 
         const editedConcert = {
             bandName: $editedBandNameValue,
