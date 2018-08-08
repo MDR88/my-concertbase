@@ -15,7 +15,7 @@ const databaseMethods = Object.create({}, {
             // pull userID from local storage here. 
             const loadDatabase = function(localStorageKey) {
                 const databaseString = localStorage.getItem(localStorageKey)
-                console.log("database string", databaseString)
+                console.log(databaseString)
                 return JSON.parse(databaseString)
               }
               const concertUserId = loadDatabase("User ID")
@@ -94,15 +94,21 @@ const databaseMethods = Object.create({}, {
         
         })
     }
-},    addUser: {
+},  addUser: {
     value: (newUser) => {
         return $.ajax({
             url: "http://localhost:3000/users",
             method: "POST",
             data: newUser
         })
+    },
+    getAllBands: {
+        value: () => {
+            return $.ajax("http://localhost:3000/bands")
+        }
     }
-}
+},
+
 })
 
 module.exports = databaseMethods;

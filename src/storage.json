@@ -35,6 +35,15 @@
       "password": "mpass",
       "favoriteBand": "The Cure",
       "id": 3
+    },
+    {
+      "userName": "jen",
+      "firstName": "Jennifer",
+      "lastName": "Roberts",
+      "email": "jen@email",
+      "password": "jpass",
+      "favoriteBand": "The Wallflowers",
+      "id": 4
     }
   ],
   "bands": [
@@ -79,6 +88,36 @@
       "journal": "",
       "userId": "3",
       "id": 1
+    },
+    {
+      "bandName": "The Cure",
+      "date": "",
+      "venue": "Long Beach Arena",
+      "setList": "Setlist",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "0",
+      "id": 2
+    },
+    {
+      "bandName": "They Might Be Giants",
+      "date": "",
+      "venue": "The Coach House",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "0",
+      "id": 3
+    },
+    {
+      "bandName": "The Wallflowers",
+      "date": "",
+      "venue": "Henry Ford Theater",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "4",
+      "id": 4
     }
   ]
 }
