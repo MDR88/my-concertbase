@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 0,
-      "userName": "mdr88",
+      "userName": "USER_NAME",
       "email": "mikedroberts88@gmail.com",
-      "password": "mpass",
+      "password": "USER_PASSWORD",
       "favoriteBand": "Favorite Band",
       "firstName": "FIRST NAME",
       "lastName": "LAST NAME"
@@ -49,7 +49,7 @@
   "bands": [
     {
       "id": 0,
-      "band": "Band_Name",
+      "band": "SELECT BAND",
       "url": "http://www.band_Name.com"
     },
     {
@@ -66,6 +66,34 @@
       "id": 3,
       "band": "The Ramones",
       "url": "http://www.theramones.com"
+    },
+    {
+      "band": "bob",
+      "id": 4
+    },
+    {
+      "band": "tom",
+      "id": 5
+    },
+    {
+      "band": "Jordan",
+      "id": 6
+    },
+    {
+      "band": "FRED",
+      "id": 7
+    },
+    {
+      "band": "DAN",
+      "id": 8
+    },
+    {
+      "band": "dsfdfdsf",
+      "id": 9
+    },
+    {
+      "band": "ssss",
+      "id": 10
     }
   ],
   "concerts": [
@@ -138,6 +166,136 @@
       "journal": "",
       "userId": "0",
       "id": 7
+    },
+    {
+      "bandName": "The Ramones",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "0",
+      "id": 8
+    },
+    {
+      "bandName": "Social Distortion",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "4",
+      "id": 9
+    },
+    {
+      "bandName": "The Ramones",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 10
+    },
+    {
+      "bandName": "Social Distortion",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 11
+    },
+    {
+      "bandName": "SELECT BAND",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 12
+    },
+    {
+      "bandName": "The Cure",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 13
+    },
+    {
+      "bandName": "",
+      "id": 14
+    },
+    {
+      "bandName": "",
+      "id": 15
+    },
+    {
+      "bandName": "",
+      "id": 16
+    },
+    {
+      "bandName": "",
+      "id": 17
+    },
+    {
+      "bandName": "BAND ADDED",
+      "id": 18
+    },
+    {
+      "band": "The Eagles",
+      "id": 19
+    },
+    {
+      "band": "NEW BAND HERERDFDFD",
+      "id": 20
+    },
+    {
+      "band": "The Scooby Doos",
+      "id": 21
+    },
+    {
+      "band": "TEST",
+      "id": 22
+    },
+    {
+      "band": "WIX",
+      "id": 23
+    },
+    {
+      "bandName": "The Ramones",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 24
+    },
+    {
+      "bandName": "bob",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 25
+    },
+    {
+      "bandName": "ssss",
+      "date": "",
+      "venue": "SSS",
+      "setList": "SSS",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "3",
+      "id": 26
     }
   ]
 }

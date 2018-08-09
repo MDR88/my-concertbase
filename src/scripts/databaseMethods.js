@@ -69,8 +69,9 @@ const databaseMethods = Object.create({}, {
     },
     addBand: {
         value: (band) => {
+            console.log("DatabaseMethods BAND", band)
             return $.ajax({
-                url: "http://localhost:3000/concerts",
+                url: "http://localhost:3000/bands",
                 method: "POST",
                 data: band
             })

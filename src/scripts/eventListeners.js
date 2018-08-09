@@ -46,6 +46,7 @@ baseContainer.addEventListener("click", () => {
         }
 
         databaseMethods.addConcert(concert).then((response) => {
+
             clear.clearVault()
             printToDOM.addConcertToDOM()
 
@@ -175,6 +176,20 @@ baseContainer.addEventListener("click", () => {
         // Loads the login screen
         login.buildLoginForm()
 
+    } else if (event.target.id === "band-add-btn") {
+        console.log("Add Button Clicked");
+
+        $bandNameValue = document.getElementById("add-band-input").value;
+
+        const band = {
+            band: $bandNameValue
+        }
+        databaseMethods.addBand(band).then((response) => {
+            clear.clearAll()
+            addConcert.addConcertForm()
+            printToDOM.addConcertToDOM()
+
+        })
     }
 
 
