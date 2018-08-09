@@ -29,17 +29,15 @@ const addConcertObject = Object.create({}, {
                     option.innerHTML = response[i].band;
 
                     //Set the band value. 
-                    option.value = response[i].id;
-
-                    
+                    option.value = response[i].band;
 
                     //Add the Option element to DropDownList.
                     $bandDropdown.append(option);
                    
                 }
                 $bandDropdown.appendTo($concertFormDiv);
-                const $bandNameLabel = $("<label>").attr("for", "band-name").text("Band Name");
-                const $bandNameInput = $("<input>").attr("id", "band-name").attr("placeholder", "Band Name").appendTo($concertFormDiv);
+                //const $bandNameLabel = $("<label>").attr("for", "band-name").text("Band Name");
+                //const $bandNameInput = $("<input>").attr("id", "band-name").attr("placeholder", "Band Name").appendTo($concertFormDiv);
 
                 const $concertDateLabel = $("<label>").attr("for", "concert-date").text("Concert Date")
                 const $concertDateInput = $("<input>").attr("type", "date").attr("id", "concert-date").attr("placeholder", "Concert Date").appendTo($concertFormDiv);
