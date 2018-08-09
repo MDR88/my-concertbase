@@ -70,16 +70,6 @@
   ],
   "concerts": [
     {
-      "bandName": "new ",
-      "date": "DATE",
-      "venue": "VENUE",
-      "setList": "SETLIST",
-      "mediaLinksurl": "MEDIA LINKS",
-      "journal": "MY_JOURNAL",
-      "userId": "",
-      "id": 0
-    },
-    {
       "bandName": "They Might Be Giants",
       "date": "",
       "venue": "The Coach House",
