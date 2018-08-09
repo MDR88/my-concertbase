@@ -13,13 +13,13 @@ const databaseMethods = Object.create({}, {
     getAllConcerts: {
         value: () => {
             // pull userID from local storage here. 
-            const loadDatabase = function(localStorageKey) {
+            const loadDatabase = function (localStorageKey) {
                 const databaseString = localStorage.getItem(localStorageKey)
-                console.log("database string", databaseString)
+                console.log(databaseString)
                 return JSON.parse(databaseString)
-              }
-              const concertUserId = loadDatabase("User ID")
-              console.log("Loads UserID From Database to Add Concert", concertUserId)
+            }
+            const concertUserId = loadDatabase("User ID")
+            console.log("Loads UserID From Database to Add Concert", concertUserId)
             //change query string to use string interpelation using User ID.
             return $.ajax(`http://localhost:3000/concerts?userId=${concertUserId}`)
         }
@@ -33,7 +33,7 @@ const databaseMethods = Object.create({}, {
             return $.ajax({
                 url: `http://localhost:3000/concerts/${id}`,
                 method: "DELETE",
-            
+
 
             })
         }
@@ -54,15 +54,15 @@ const databaseMethods = Object.create({}, {
                 url: `http://localhost:3000/concerts/${id}`,
                 method: "PUT",
                 data: {
-                    
+
                     bandName: concert.bandName,
                     date: concert.date,
                     venue: concert.venue,
-                    setList: concert.setList, 
+                    setList: concert.setList,
                     mediaLinksurl: concert.mediaLinksurl,
                     journal: concert.journal,
                     userId: concert.userId
-        
+
                 }
             })
         }
@@ -88,21 +88,28 @@ const databaseMethods = Object.create({}, {
     },
     getUserName: {
         value: (userName) => {
-        return $.ajax({
-            url: `http://localhost:3000/users?userName=${userName}`,
-            method: "GET",
-        
-        })
+            return $.ajax({
+                url: `http://localhost:3000/users?userName=${userName}`,
+                method: "GET",
+
+            })
+        }
+    }, addUser: {
+        value: (newUser) => {
+            return $.ajax({
+                url: "http://localhost:3000/users",
+                method: "POST",
+                data: newUser
+            })
+        }
+    },
+    getAllBands: {
+        value: () => {
+            return $.ajax("http://localhost:3000/bands")
+        }
     }
-},    addUser: {
-    value: (newUser) => {
-        return $.ajax({
-            url: "http://localhost:3000/users",
-            method: "POST",
-            data: newUser
-        })
-    }
-}
+
+
 })
 
 module.exports = databaseMethods;
