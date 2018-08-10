@@ -12,8 +12,12 @@ Give it a try.
 After you fork and download. (requires npm, a local http server, and grunt)
 cd myconcertbase
 npm install “requires npm”
-Run grunt “Grunt is required”
-Run http-server “requires a local http server”
+cd dist
+run grunt “Run from the src folder”
+cd src 
+run json-server –w storage.json “Run from the src folder.”
+Cd dist
+Run http-server “Run from the dist folder”
 Screenshots:
 
 
