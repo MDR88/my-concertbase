@@ -2,9 +2,9 @@
   "users": [
     {
       "id": 0,
-      "userName": "mdr88",
+      "userName": "USER_NAME",
       "email": "mikedroberts88@gmail.com",
-      "password": "mpass",
+      "password": "USER_PASSWORD",
       "favoriteBand": "Favorite Band",
       "firstName": "FIRST NAME",
       "lastName": "LAST NAME"
@@ -49,7 +49,7 @@
   "bands": [
     {
       "id": 0,
-      "band": "Band_Name",
+      "band": "SELECT BAND",
       "url": "http://www.band_Name.com"
     },
     {
@@ -66,19 +66,13 @@
       "id": 3,
       "band": "The Ramones",
       "url": "http://www.theramones.com"
+    },
+    {
+      "band": "They Might Be Giants",
+      "id": 4
     }
   ],
   "concerts": [
-    {
-      "bandName": "They Might Be Giants",
-      "date": "",
-      "venue": "The Coach House",
-      "setList": "",
-      "mediaLinksurl": "",
-      "journal": "",
-      "userId": "3",
-      "id": 1
-    },
     {
       "bandName": "The Cure",
       "date": "",
@@ -108,6 +102,136 @@
       "journal": "",
       "userId": "4",
       "id": 4
+    },
+    {
+      "bandName": "The Smiths",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "0",
+      "id": 5
+    },
+    {
+      "bandName": "The Cure",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "0",
+      "id": 6
+    },
+    {
+      "bandName": "Social Distortion",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "0",
+      "id": 7
+    },
+    {
+      "bandName": "The Ramones",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "0",
+      "id": 8
+    },
+    {
+      "bandName": "Social Distortion",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "4",
+      "id": 9
+    },
+    {
+      "bandName": "",
+      "id": 14
+    },
+    {
+      "bandName": "",
+      "id": 15
+    },
+    {
+      "bandName": "",
+      "id": 16
+    },
+    {
+      "bandName": "",
+      "id": 17
+    },
+    {
+      "bandName": "BAND ADDED",
+      "id": 18
+    },
+    {
+      "band": "The Eagles",
+      "id": 19
+    },
+    {
+      "band": "NEW BAND HERERDFDFD",
+      "id": 20
+    },
+    {
+      "band": "The Scooby Doos",
+      "id": 21
+    },
+    {
+      "band": "TEST",
+      "id": 22
+    },
+    {
+      "band": "WIX",
+      "id": 23
+    },
+    {
+      "bandName": "They Might Be Giants",
+      "date": "1992-11-19",
+      "venue": "The Coach House San Juan Capistrano",
+      "setList": "Everything Right Is Wrong Again Play Video Put Your Hand Inside the Puppet Head Play Video Number Three Play Video Don't Let's Start Play Video Hide Away Folk Family Play Video 32 Footsteps Play Video Toddler Hiway Play Video Rabid Child Play Video Nothing's Gonna Change My Clothes Play Video (She Was A) Hotel Detective Play Video She's an Angel Play Video Youth Culture Killed My Dog Play Video Boat of Car Play Video Absolutely Bill's Mood Play Video Chess Piece Face Play Video I Hope That I Get Old Before I Die Play Video Alienation's for the Rich Play Video The Day Play Video Rhythm Section Want Ad",
+      "mediaLinksurl": "https://youtu.be/NdHMFNM0WSk",
+      "journal": "One of the first concerts I ever went to. It was a great show. I  was invited to the show by a friend from school. I remember his dad driving us and dropping us off. We sat in the front row. The guitar player slide his guitar down our table. It was a great show. ",
+      "userId": "3",
+      "id": 24
+    },
+    {
+      "bandName": "Social Distortion",
+      "date": "1990-04-05",
+      "venue": "Irvine University",
+      "setList": "Backstreet Girl (The Rolling Stones cover) Play Video So Far Away Play Video It Coulda Been Me Play Video Ring of Fire (Merle Kilgore cover) Play Video Let It Be Me Play Video Sick Boys Play Video Like an Outlaw (For You) Play Video 1945 Play Video Ball and Chain Play Video Drug Train",
+      "mediaLinksurl": "https://youtu.be/oh8zcbC_Dcw",
+      "journal": "This was an amazing show. The Screaming Trees opened for them. This was the tour that really made them more known worldwide due to the hit single Ball And Chain.",
+      "userId": "3",
+      "id": 25
+    },
+    {
+      "bandName": "The Ramones",
+      "date": "1990-08-03",
+      "venue": "Irvine Meadows Irvine Ca.",
+      "setList": "Coming Soon..",
+      "mediaLinksurl": "",
+      "journal": "I am so glad I got to see the Ramones. I was a junior in high school. This was a great time in my life. ",
+      "userId": "3",
+      "id": 26
+    },
+    {
+      "bandName": "The Cure",
+      "date": "1992-06-21",
+      "venue": "Long Beach Arena Long Beach CA.",
+      "setList": " Tape (Intro over PA) Play Video Open Play Video High Play Video Pictures of You Play Video Lullaby Play Video Just Like Heaven Play Video Fascination Street Play Video Charlotte Sometimes Play Video Trust Play Video The Walk Play Video Let's Go to Bed Play Video Friday I'm in Love Play Video In Between Days Play Video From the Edge of the Deep Green Sea Play Video Never Enough Play Video Cut Play Video End",
+      "mediaLinksurl": "",
+      "journal": "This was the first of many Cure concerts. I was in my peak of Goth. I remember seeing people with signs that were not happy about the Cure or the fans. Their signs said \"God doesn't allow men with skirts to heaven\". I will never forget at that young age, how dumb people are. ",
+      "userId": "3",
+      "id": 27
     }
   ]
 }

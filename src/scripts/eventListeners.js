@@ -18,7 +18,9 @@ baseContainer.addEventListener("click", () => {
     if (event.target.id === "concert-add-btn") {
         console.log("ADD CONCERT BUTTON CLICKED")
         // Capture the values of the fields and store in a variable. 
-        const $bandNameValue = document.getElementById("band-name").value;
+        //const $bandNameValue = document.getElementById("band-name").value;
+
+        const $bandNameValue = document.getElementById("band-dropdown").value
         const $concertDateValue = document.getElementById("concert-date").value;
         const $concertVenueValue = document.getElementById("concert-venue").value
         const $concertSetlistValue = document.getElementById("concert-setlist").value;
@@ -44,6 +46,7 @@ baseContainer.addEventListener("click", () => {
         }
 
         databaseMethods.addConcert(concert).then((response) => {
+
             clear.clearVault()
             printToDOM.addConcertToDOM()
 
@@ -146,18 +149,18 @@ baseContainer.addEventListener("click", () => {
 
                 // Sets the item to show the localStorage key followed by the stringified database. This can be viewed in local storage.
                 localStorage.setItem(localStorageKey, stringifiedDatabase)
-        
+
             }
 
             saveDatabase(user.id, "User ID")
 
             clear.clearVault()
             clear.clearAll()
-                // Loads the add concert form.
-                addConcert.addConcertForm()
+            // Loads the add concert form.
+            addConcert.addConcertForm()
 
-                //loads the concerts already added from stroage.
-                printToDOM.addConcertToDOM()
+            //loads the concerts already added from stroage.
+            printToDOM.addConcertToDOM()
 
             //login.buildLoginForm()
 
@@ -173,6 +176,20 @@ baseContainer.addEventListener("click", () => {
         // Loads the login screen
         login.buildLoginForm()
 
+    } else if (event.target.id === "band-add-btn") {
+        console.log("Add Button Clicked");
+
+        $bandNameValue = document.getElementById("add-band-input").value;
+
+        const band = {
+            band: $bandNameValue
+        }
+        databaseMethods.addBand(band).then((response) => {
+            clear.clearAll()
+            addConcert.addConcertForm()
+            printToDOM.addConcertToDOM()
+
+        })
     }
 
 
