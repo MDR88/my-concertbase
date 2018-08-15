@@ -194,6 +194,7 @@ baseContainer.addEventListener("click", () => {
 
 
 })
+
 const concertVault = document.querySelector("#concert-vault-container");
 concertVault.addEventListener("click", () => {
 

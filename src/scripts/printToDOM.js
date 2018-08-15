@@ -23,9 +23,15 @@ const addShowToDOMObject = Object.create({}, {
                         const $pElmediaLinks = $("<p>").addClass("mediaLinks-field-class").attr("id", "mediaLinks-field-id").text(`Media Links: ${concert.mediaLinksurl}`).appendTo($concertCard)
                         const $pElSetList = $("<p>").addClass("setList-field-class").attr("id", "setList-field-id").text(`The Set List: ${concert.setList}`).appendTo($concertCard)
                         const $pElMyJournal = $("<p>").addClass("myJournal-field-class").attr("id", "myJournal-field-id").text(`My Journal: ${concert.journal}`).appendTo($concertCard)
-                        const $editConcertBtn = $("<button>").attr("id", "edit-concert-btn-id").addClass("edit-concert-btn-class").text("Edit").appendTo($concertCard)
-                        const $delConcertBtn = $("<button>").attr("id", "del-concert-btn-id").addClass("del-concert-btn-class").text("Delete").appendTo($concertCard)
+
+                        // Create a div for the delete and save buttons for CSS purposes.
+                        const $btnDiv = $("<div>").addClass("btn-div").attr("Id", `${concert.id}`)
+
+
+                        const $editConcertBtn = $("<button>").attr("id", "edit-concert-btn-id").addClass("edit-concert-btn-class").text("Edit").appendTo($btnDiv)
+                        const $delConcertBtn = $("<button>").attr("id", "del-concert-btn-id").addClass("del-concert-btn-class").text("Delete").appendTo($btnDiv)
                         $concertCard.appendTo(concertVault)
+                        $btnDiv.appendTo($concertCard)
                     }
 
 
