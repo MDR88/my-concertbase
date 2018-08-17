@@ -21,19 +21,24 @@ body {
     display:flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    justify-content: space-between;
     border: double rgb(146, 182, 189) .5px;
     border-radius: 20px;
-    border-width: 56px;
-    text-align: center  
+    border-width: 25px; 
+    text-align: center;
+    margin: 16px;
 
     }
 
     .btn-div-class {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        height: 200px;
+        align-items: center;
         
     }
-    .edit-concert-btn-class {
+    /* .edit-concert-btn-class {
         border: solid .5px;
         width: 50px;
 
@@ -42,7 +47,7 @@ body {
         border: solid .5px;
         width: 50px;
     }
-   
+    */
 
 #mainPage-title {
     border-radius: 200px;

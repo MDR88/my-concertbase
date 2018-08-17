@@ -30,7 +30,11 @@ const addShowToDOMObject = Object.create({}, {
 
                         const $editConcertBtn = $("<button>").attr("id", "edit-concert-btn-id").addClass("edit-concert-btn-class").text("Edit").appendTo($btnDiv)
                         const $delConcertBtn = $("<button>").attr("id", "del-concert-btn-id").addClass("del-concert-btn-class").text("Delete").appendTo($btnDiv)
+                        const $bandBtn = $("<button>").attr("id", "band-btn-id").addClass("band-btn-class").text("Band Website").appendTo($btnDiv)
+                        
+                        // Append to the div child of the main div.
                         $concertCard.appendTo(concertVault)
+                        // Appends to the concert card.
                         $btnDiv.appendTo($concertCard)
                     }
 
