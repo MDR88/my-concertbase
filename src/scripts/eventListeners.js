@@ -187,6 +187,7 @@ baseContainer.addEventListener("click", () => {
         }
         databaseMethods.addBand(band).then((response) => {
             clear.clearAll()
+            clear.clearVault()
             addConcert.addConcertForm()
             printToDOM.addConcertToDOM()
 

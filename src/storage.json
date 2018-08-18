@@ -53,6 +53,24 @@
       "password": "spass",
       "favoriteBand": "Taylor Swift",
       "id": 5
+    },
+    {
+      "userName": "french",
+      "firstName": "Red",
+      "lastName": "French",
+      "email": "red@red.com",
+      "password": "fpass",
+      "favoriteBand": "Stone Temple Pilots",
+      "id": 6
+    },
+    {
+      "userName": "lucy",
+      "firstName": "Lucy",
+      "lastName": "Roberts",
+      "email": "lucy",
+      "password": "lpass",
+      "favoriteBand": "Taylor Swift",
+      "id": 7
     }
   ],
   "bands": [
@@ -123,6 +141,34 @@
     {
       "band": "Paul McCartney",
       "id": 15
+    },
+    {
+      "band": "Stevie Ray Vaughn",
+      "id": 16
+    },
+    {
+      "band": "New Kids On The Block",
+      "id": 17
+    },
+    {
+      "band": "The Clash",
+      "id": 18
+    },
+    {
+      "band": "Marshall Tucker Band",
+      "id": 19
+    },
+    {
+      "band": "Cake",
+      "id": 20
+    },
+    {
+      "band": "The Smiths",
+      "id": 21
+    },
+    {
+      "band": "Rush",
+      "id": 22
     }
   ],
   "concerts": [
@@ -295,6 +341,26 @@
       "journal": "",
       "userId": "5",
       "id": 28
+    },
+    {
+      "bandName": "Stevie Ray Vaughn",
+      "date": "1990-06-20",
+      "venue": "Starwood Amplitheter",
+      "setList": "",
+      "mediaLinksurl": "www.stevierayvaughn.com",
+      "journal": "There was a lightning storm happening at the same time Stevie was on stage. There was lightning behind him while playing. He tragically died just two months later. ",
+      "userId": "6",
+      "id": 29
+    },
+    {
+      "bandName": "The Cure",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "7",
+      "id": 30
     }
   ]
 }
