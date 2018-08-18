@@ -127,6 +127,7 @@ baseContainer.addEventListener("click", () => {
         const $regPasswordValue = document.getElementById("regPass").value;
         const $regFavBandValue = document.getElementById("fav-band-name").value;
 
+        // Create an object that takes the values and stores in newUser
         const newUser = {
             userName: $regUserNameValue,
             firstName: $regFirstNameValue,
@@ -186,6 +187,7 @@ baseContainer.addEventListener("click", () => {
         }
         databaseMethods.addBand(band).then((response) => {
             clear.clearAll()
+            clear.clearVault()
             addConcert.addConcertForm()
             printToDOM.addConcertToDOM()
 
@@ -194,6 +196,7 @@ baseContainer.addEventListener("click", () => {
 
 
 })
+
 const concertVault = document.querySelector("#concert-vault-container");
 concertVault.addEventListener("click", () => {
 
@@ -202,11 +205,11 @@ concertVault.addEventListener("click", () => {
         console.log("Edit Button Clicked")
 
         let concertId = (event.target.parentNode.id)
-        console.log(concertId)
+        console.log("EDIT CLICKED CONCERT ID", concertId)
         databaseMethods.getConcert(concertId)
             .then((concert) => {
                 console.log("The ID On Click")
-                console.log(concert)
+                console.log("EDIT CONCERT", concert)
 
                 editConcertForm.editConcertForm(concert)
             })
@@ -220,6 +223,12 @@ concertVault.addEventListener("click", () => {
             printToDOM.addConcertToDOM()
         })
 
+        // When you click the band Button, it will load the url of the mediaLinksUrl.
+        //START BAND BUTTON
+    } else if (event.target.id === "band-btn-id") {
+        console.log("Band Button Clicked!")
+       
+        // END BAND BUTTON
 
     } else if (event.target.className === "save-btn") {
 

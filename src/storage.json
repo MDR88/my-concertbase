@@ -44,6 +44,33 @@
       "password": "jpass",
       "favoriteBand": "The Wallflowers",
       "id": 4
+    },
+    {
+      "userName": "stella",
+      "firstName": "Stella",
+      "lastName": "Roberts",
+      "email": "stella@email.com",
+      "password": "spass",
+      "favoriteBand": "Taylor Swift",
+      "id": 5
+    },
+    {
+      "userName": "french",
+      "firstName": "Red",
+      "lastName": "French",
+      "email": "red@red.com",
+      "password": "fpass",
+      "favoriteBand": "Stone Temple Pilots",
+      "id": 6
+    },
+    {
+      "userName": "lucy",
+      "firstName": "Lucy",
+      "lastName": "Roberts",
+      "email": "lucy",
+      "password": "lpass",
+      "favoriteBand": "Taylor Swift",
+      "id": 7
     }
   ],
   "bands": [
@@ -70,6 +97,78 @@
     {
       "band": "They Might Be Giants",
       "id": 4
+    },
+    {
+      "band": "Taylor Swift",
+      "id": 5
+    },
+    {
+      "band": "Pearl Jam",
+      "id": 6
+    },
+    {
+      "band": "The Band",
+      "id": 7
+    },
+    {
+      "band": "The Rolling Stones",
+      "id": 8
+    },
+    {
+      "band": "Bauhaus",
+      "id": 9
+    },
+    {
+      "band": "Siouxsie And The Banshees",
+      "id": 10
+    },
+    {
+      "band": "Depeche Mode",
+      "id": 11
+    },
+    {
+      "band": "Jason Isbell",
+      "id": 12
+    },
+    {
+      "band": "Margo Price",
+      "id": 13
+    },
+    {
+      "band": "The Eagles",
+      "id": 14
+    },
+    {
+      "band": "Paul McCartney",
+      "id": 15
+    },
+    {
+      "band": "Stevie Ray Vaughn",
+      "id": 16
+    },
+    {
+      "band": "New Kids On The Block",
+      "id": 17
+    },
+    {
+      "band": "The Clash",
+      "id": 18
+    },
+    {
+      "band": "Marshall Tucker Band",
+      "id": 19
+    },
+    {
+      "band": "Cake",
+      "id": 20
+    },
+    {
+      "band": "The Smiths",
+      "id": 21
+    },
+    {
+      "band": "Rush",
+      "id": 22
     }
   ],
   "concerts": [
@@ -99,7 +198,7 @@
       "venue": "Henry Ford Theater",
       "setList": "",
       "mediaLinksurl": "",
-      "journal": "",
+      "journal": "Hello",
       "userId": "4",
       "id": 4
     },
@@ -206,7 +305,7 @@
     {
       "bandName": "Social Distortion",
       "date": "1990-04-05",
-      "venue": "Irvine University",
+      "venue": "Irvine College",
       "setList": "Backstreet Girl (The Rolling Stones cover) Play Video So Far Away Play Video It Coulda Been Me Play Video Ring of Fire (Merle Kilgore cover) Play Video Let It Be Me Play Video Sick Boys Play Video Like an Outlaw (For You) Play Video 1945 Play Video Ball and Chain Play Video Drug Train",
       "mediaLinksurl": "https://youtu.be/oh8zcbC_Dcw",
       "journal": "This was an amazing show. The Screaming Trees opened for them. This was the tour that really made them more known worldwide due to the hit single Ball And Chain.",
@@ -232,6 +331,36 @@
       "journal": "This was the first of many Cure concerts. I was in my peak of Goth. I remember seeing people with signs that were not happy about the Cure or the fans. Their signs said \"God doesn't allow men with skirts to heaven\". I will never forget at that young age, how dumb people are. ",
       "userId": "3",
       "id": 27
+    },
+    {
+      "bandName": "Test",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "5",
+      "id": 28
+    },
+    {
+      "bandName": "Stevie Ray Vaughn",
+      "date": "1990-06-20",
+      "venue": "Starwood Amplitheter",
+      "setList": "",
+      "mediaLinksurl": "www.stevierayvaughn.com",
+      "journal": "There was a lightning storm happening at the same time Stevie was on stage. There was lightning behind him while playing. He tragically died just two months later. ",
+      "userId": "6",
+      "id": 29
+    },
+    {
+      "bandName": "The Cure",
+      "date": "",
+      "venue": "",
+      "setList": "",
+      "mediaLinksurl": "",
+      "journal": "",
+      "userId": "7",
+      "id": 30
     }
   ]
 }
