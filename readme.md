@@ -6,10 +6,14 @@ The reason I created this app was to log every concert and memories of those con
 
 Tools:
 * HTML
+* CSS
 * Bootstrap
 * Javascript
 * JQuery
 * JSON
+* Grunt
+* Browserify
+
 Give it a try.
 
 After you fork and download.
