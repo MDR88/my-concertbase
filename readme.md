@@ -16,7 +16,7 @@ Tools:
 
 Give it a try.
 
-After you fork and download.
+After you CLONE or Download follow these steps.
 1. cd myconcertbase
 2. npm install "requires npm"
 3. run grunt "Run from the src folder"
