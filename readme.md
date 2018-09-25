@@ -23,8 +23,11 @@ After you CLONE or Download follow these steps.
 4. cd ..
 5. cd src 
 6. run json-server -w storage.json "Run from the src folder"
-7. Cd dist
-8. Run http-server "Run from the dist folder"
+7. Cd ..
+8. Cd dist
+9. Run http-server "Run from the dist folder"
+
+The Browser will launch. If you are a new user, select Register. Once you register, you will be able to log in and all of the concerts you add will load when you log into your profile.
 
 
 
